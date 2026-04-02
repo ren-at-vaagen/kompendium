@@ -595,3 +595,50 @@ nav {
     padding: 0 2rem;
   }
 }
+/* ── STICKY NAV ── */
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+  transition: background 0.2s;
+}
+
+/* ── FOOTER ── */
+.site-footer {
+  font-size: 12px;
+  color: var(--text3);
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--border2);
+  line-height: 2;
+}
+.site-footer a {
+  color: var(--text3);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ── WAKELET LINKS ── */
+.wakelet-link {
+  display: block;
+  font-size: 13px;
+  color: var(--text3);
+  text-decoration: none;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border2);
+  letter-spacing: 0.02em;
+}
+.wakelet-link:hover {
+  color: var(--text);
+}
+
+/* ── DESKTOP LAYOUT ── */
+@media (min-width: 700px) {
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
