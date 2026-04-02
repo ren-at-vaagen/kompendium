@@ -587,3 +587,11 @@ nav {
     font-size: 13px;
   }
 }
+/* ── DESKTOP LAYOUT ── */
+@media (min-width: 700px) {
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
