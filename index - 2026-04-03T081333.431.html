@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaterfag kompendium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner" style="justify-content: flex-end;">
+    <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Bytt fargemodus">☀︎</button>
+  </div>
+</nav>
+
+<div class="page">
+  <h1 class="page-title">TEATERFAG KOMPENDIUM</h1>
+  <p class="index-tagline">Inspirasjon · Kunnskap · Ressurser</p>
+
+  <nav class="chapter-list">
+
+    <a class="chapter-link" href="teaterhistorie.html">
+      <span class="chapter-number">01</span>
+      <span class="chapter-info">
+        <span class="chapter-title">Teaterhistorie</span>
+        <span class="chapter-desc">Fra antikken til i dag — epoker, ismer og kontekst</span>
+      </span>
+      <span class="chapter-arrow">→</span>
+    </a>
+
+    <a class="chapter-link" href="teaterfornyere.html">
+      <span class="chapter-number">02</span>
+      <span class="chapter-info">
+        <span class="chapter-title">Teaterfornyere</span>
+        <span class="chapter-desc">Regissører, dramatikere og teoretikere som forandret teateret</span>
+      </span>
+      <span class="chapter-arrow">→</span>
+    </a>
+
+    <a class="chapter-link" href="dramaturgi.html">
+      <span class="chapter-number">03</span>
+      <span class="chapter-info">
+        <span class="chapter-title">Dramaturgi</span>
+        <span class="chapter-desc">Struktur, handling og fortellingens logikk</span>
+      </span>
+      <span class="chapter-arrow">→</span>
+    </a>
+
+    <a class="chapter-link" href="produksjon.html">
+      <span class="chapter-number">04</span>
+      <span class="chapter-info">
+        <span class="chapter-title">Produksjon</span>
+        <span class="chapter-desc">Analyse og praksis — fra idé til forestilling</span>
+      </span>
+      <span class="chapter-arrow">→</span>
+    </a>
+
+    <a class="chapter-link" href="skuespill.html">
+      <span class="chapter-number">05</span>
+      <span class="chapter-info">
+        <span class="chapter-title">Skuespill</span>
+        <span class="chapter-desc">Teknikker, metoder og skuespillertrening</span>
+      </span>
+      <span class="chapter-arrow">→</span>
+    </a>
+
+    <a class="chapter-link" href="tilleggsmateriale.html">
+      <span class="chapter-number">06</span>
+      <span class="chapter-info">
+        <span class="chapter-title">Tilleggsmateriale</span>
+        <span class="chapter-desc">Studieark, diagrammer, begreper og ressurser</span>
+      </span>
+      <span class="chapter-arrow">→</span>
+    </a>
+
+  </nav>
+</div>
+
+<footer class="site-footer">
+  © 2026 · Redaktør: <a href="/cdn-cgi/l/email-protection#aad8cfc484c1cbdec2cfd8c3c4cf84dac5ddcfc6c6ead9c1c5c6cf84d8c5cdccc184c4c5">Ren Powell</a>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    document.querySelector('.theme-toggle').textContent = next === 'dark' ? '☽' : '☀︎';
+    localStorage.setItem('theme', next);
+  }
+
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    document.doc
