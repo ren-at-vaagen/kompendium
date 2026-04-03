@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oppvarming og stemme — Teaterfag kompendium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-home" href="skuespill.html">← Skuespill</a>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <span class="nav-title">Oppvarming og stemme</span>
+      <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Bytt fargemodus">☀︎</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+  <h1 class="page-title">OPPVARMING OG STEMME</h1>
+
+  <div class="page-sub">
+    Oppvarming skal:
+    <ul class="bullets" style="margin-top:0.5rem;">
+      <li>smøre leddene med synovialvæske og varme opp muskulaturen</li>
+      <li>gi bevissthet om spenninger, bevegelsesutslag, balanse og koordinasjon</li>
+      <li>øke pulsen og bidra til kontroll av pusten</li>
+      <li>samle fokus og oppmerksomhet her og nå</li>
+      <li>skape kontakt og samspill i ensemblet</li>
+      <li>inkludere stemmeoppvarming</li>
+    </ul>
+  </div>
+
+  <div class="wakeletEmbed" data-url="https://embed.wakelet.com/wakes/C1SfeXjhtBzNDAK3IgW5V/list"></div>
+  <script src="https://embed-assets.wakelet.com/wakelet-embed.js" charset="UTF-8"></script>
+</div>
+
+<footer class="site-footer">
+  <a href="skuespill.html">← Skuespill</a><br>
+  © 2026 · Redaktør: <a href="/cdn-cgi/l/email-protection#ea988f84c4818b9e828f9883848fc49a859d8f8686aa998185868fc498858d8c81c48485">Ren Powell</a>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  document.querySelector('.theme-toggle').textContent = next === 'dark' ? '☽' : '☀︎';
+  localStorage.setItem('theme', next);
+}
+
+const saved = localStorage.getItem('theme');
+if (saved) {
+  documen
