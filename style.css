@@ -876,10 +876,11 @@ nav {
 }
 
 .kontinuum-img {
-  height: 1040px;
-  width: auto !important;
-  max-width: none !important;
   display: block;
+  height: 1040px;
+  width: auto;
+  max-width: none;
+  margin: 0.8rem 0;
 }
 
 /* ── DIAGRAMS ── */
@@ -1003,7 +1004,7 @@ nav {
   color: var(--text);
 }
 
-.tmat-body img {
+.tmat-body img:not(.kontinuum-img) {
   width: 100%;
   margin: 0.8rem 0;
   border-radius: 4px;
