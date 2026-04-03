@@ -877,8 +877,8 @@ nav {
 
 .kontinuum-img {
   height: 1040px;
-  width: auto;
-  max-width: none;
+  width: auto !important;
+  max-width: none !important;
   display: block;
 }
 
