@@ -861,14 +861,14 @@ nav {
   margin-bottom: 0.6rem;
 }
 
-.kontinuum-wrap {
+.-wrap {
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   margin: 0.8rem 0;
   cursor: grab;
 }
 
-.kontinuum-note {
+.-note {
   font-size: 11px;
   color: var(--text3);
   letter-spacing: 0.04em;
@@ -877,7 +877,7 @@ nav {
 
 .kontinuum-img {
   display: block;
-  height: 624px;
+  height: 454px;
   width: auto;
   max-width: none;
   margin: 0.8rem 0;
