@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Begrep — Teaterfag kompendium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-home" href="index.html">← Kompendium</a>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <span class="nav-title">Begrep</span>
+      <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Bytt fargemodus">☀︎</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+  <h1 class="page-title">BEGREP</h1>
+  <p class="page-sub">Test deg selv — åpne én og én.</p>
+
+  <!-- GRESKE BEGREPER -->
+  <div class="section-label-static">Greske begreper</div>
+
+  <div class="begrep" id="b-mimesis">
+    <div class="begrep-header" onclick="toggleBegrep('b-mimesis')">
+      <span class="begrep-term">Mimesis</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Etterligning eller representasjon av virkeligheten. Aristoteles brukte begrepet om kunstens evne til å etterlikne menneskelig handling. I teateret: skuespilleren «imiterer» en karakter eller situasjon. Motsetning: diegesis (fortelling fremfor fremstilling).</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-diegesis">
+    <div class="begrep-header" onclick="toggleBegrep('b-diegesis')">
+      <span class="begrep-term">Diegesis</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Fortelling — å beskrive eller berette noe fremfor å vise det direkte. Motsetning til mimesis. I episk teater (Brecht) trekkes fortelleren frem som et diegetisk virkemiddel.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-hamartia">
+    <div class="begrep-header" onclick="toggleBegrep('b-hamartia')">
+      <span class="begrep-term">Hamartia</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>En dyd eller egenskap som blir til ens undergang. Den tragiske helts karakterfeil. Hos Ødipus: viljen til å vite sannheten. Hos Hamlet: evnen til refleksjon over handling.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-katarsis">
+    <div class="begrep-header" onclick="toggleBegrep('b-katarsis')">
+      <span class="begrep-term">Katarsis</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>En følelsesmessig renselse. Aristoteles beskrev katarsis som det publikum opplever gjennom frykt og medlidenhet i møte med tragedien — en frigjøring av undertrykte følelser gjennom kunstopplevelsen.</p>
+    </div>
+  </div>
+
+  <!-- DRAMATURGISKE BEGREPER -->
+  <div class="section-label-static mt">Dramaturgiske begreper</div>
+
+  <div class="begrep" id="b-abstrakt">
+    <div class="begrep-header" onclick="toggleBegrep('b-abstrakt')">
+      <span class="begrep-term">Abstrakt</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Å abstrahere betyr å ta vekk detaljer. I kunst finnes et kontinuum fra det representasjonelle (gjenkjennelig virkelighetsnært) til det ikke-representasjonelle (så fjernt fra virkeligheten at det knapt er gjenkjennelig). Abstrakt kunst befinner seg alltid i forbindelse med noe visuelt fra den virkelige verden. I teateret: en stereotype er en liten grad av abstrahering — «skurken», «heksen».</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-illusjon">
+    <div class="begrep-header" onclick="toggleBegrep('b-illusjon')">
+      <span class="begrep-term">Illusjon</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Teaterets evne til å skape en troverdig forestilling om at det vi ser på scenen «er» virkelighet. Den realistiske illusjonsscenen («titteskapet») forsøkte å skjule teatrets kunstighet. Brecht og reteatraliseringen brøt bevisst med illusjonen.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-fjerdevegg">
+    <div class="begrep-header" onclick="toggleBegrep('b-fjerdevegg')">
+      <span class="begrep-term">4. vegg</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Den usynlige veggen mellom scenen og publikum i realistisk teater. Skuespillerne later som om publikum ikke er til stede. Å «bryte den fjerde veggen» betyr å henvende seg direkte til publikum og dermed bryte illusjonen.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-publikumskontrakt">
+    <div class="begrep-header" onclick="toggleBegrep('b-publikumskontrakt')">
+      <span class="begrep-term">Publikumskontrakt</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Den implisitte avtalen mellom forestillingen og publikum om hvordan de skal forholde seg til det de ser. En lukket form inviterer til passiv observasjon. En åpen form kan invitere til deltakelse, konfrontasjon eller medskaping.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-deklamatorisk">
+    <div class="begrep-header" onclick="toggleBegrep('b-deklamatorisk')">
+      <span class="begrep-term">Deklamatorisk</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>En høystempt, formell fremføringsstil der teksten fremføres med tydelig artikulasjon og retorisk kraft — mer opplest enn naturalistisk spilt. Kjennetegner klassisk teater og tidlig moderne spillestil før realismen.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-reteatralisering">
+    <div class="begrep-header" onclick="toggleBegrep('b-reteatralisering')">
+      <span class="begrep-term">Reteatralisering</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>En bevegelse som ønsket å befri teateret fra litteraturens dominans og gjenvinne dets egenart: rollelek, spill og fantasi. Teateret har størst virkning når det er teater — ikke illustrert litteratur. Kan ses som en forutsetning for både modernisme og postdramatisk teater.</p>
+      <p class="begrep-source">Kilde: Bjørge, E. red. (2009). Teater i perspektiv, Tell forlag, s. 131.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-metateater">
+    <div class="begrep-header" onclick="toggleBegrep('b-metateater')">
+      <span class="begrep-term">Meta-teater</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Teater som er bevisst på seg selv som teater og tematiserer dette. Skuespillere som kommenterer sin egen rolle, forestillinger som synliggjør teatrets mekanismer, eller fortellinger om å lage teater. «My Dinner with Andre» (1981) er et filmeksempel på meta-teater.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-ubermarionette">
+    <div class="begrep-header" onclick="toggleBegrep('b-ubermarionette')">
+      <span class="begrep-term">Übermarionette</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Gordon Craigs ideal for skuespilleren: en fullstendig kontrollert kunstner — ikke styrt av tilfeldige følelser, men av bevisst kunstnerisk vilje. Craig mente den menneskelige skuespillerens ukontrollerte følelsesliv var et problem for teatret. Übermarionetten skulle være like presis som en dukke, men med en ånd.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-devising">
+    <div class="begrep-header" onclick="toggleBegrep('b-devising')">
+      <span class="begrep-term">Devising</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>En skapende prosess der forestillingen utvikles kollektivt av ensemblet — uten en ferdig skrevet tekst som utgangspunkt. Improvisasjon, research og eksperimentering er sentrale arbeidsmetoder. Resultatet er en forestilling som er et felles eierskap.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-gesamtkunstwerk">
+    <div class="begrep-header" onclick="toggleBegrep('b-gesamtkunstwerk')">
+      <span class="begrep-term">Gesamtkunstwerk</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Wagners begrep for «det totale kunstverk» — en forestilling der musikk, tekst, scenografi, lys og bevegelse smelter sammen til en helhetlig kunstnerisk opplevelse der ingen enkelt element dominerer. Grunnlaget for auteur-teater og total theatre.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-gestus">
+    <div class="begrep-header" onclick="toggleBegrep('b-gestus')">
+      <span class="begrep-term">Gestus</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Brechts begrep for en holdning eller bevegelse som viser en sosial relasjon eller maktforhold — ikke bare en individuell følelse. Gestus avslører klassetilhørighet, status og politisk posisjon gjennom kroppen. Et viktig virkemiddel i episk teater.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-via-negativa">
+    <div class="begrep-header" onclick="toggleBegrep('b-via-negativa')">
+      <span class="begrep-term">Via negativa</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Grotowskis arbeidsmetode: i stedet for å legge til teknikker, skal skuespilleren fjerne hindringer — vaner, spenninger, psykologiske blokkeringer — for å nå en tilstand av total tilstedeværelse. Trening er ikke å bygge opp, men å rydde vekk.</p>
+    </div>
+  </div>
+
+  <!-- TEATERFORMER -->
+  <div class="section-label-static mt">Teaterformer og -retninger</div>
+
+  <div class="begrep" id="b-moderne">
+    <div class="begrep-header" onclick="toggleBegrep('b-moderne')">
+      <span class="begrep-term">Moderne teater</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Fra ca. 1880 til 1950. To hovedgreiner: én inspirert av Darwin og vitenskap (realisme, naturalisme, episk teater — årsak og virkning, det objektive), og én inspirert av Freud og det ubevisste (symbolisme, ekspresjonisme, surrealisme, grusomhetens teater — det subjektive og spirituelle).</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-agitprop">
+    <div class="begrep-header" onclick="toggleBegrep('b-agitprop')">
+      <span class="begrep-term">Agitprop teater</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Fra «agitation og propaganda». Begynte som en del av den kommunistiske bevegelsen i Sovjet på 1920-tallet. Flyttbare forestillinger med deklamatorisk, gjentagende form — ofte gateteater. Ikke-realistisk, politisk, for arbeiderklassen. Skuespillerne skulle presentere, ikke representere rollefigurer. Influerte Brecht direkte.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-episk">
+    <div class="begrep-header" onclick="toggleBegrep('b-episk')">
+      <span class="begrep-term">Episk teater</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Brechts teaterform: episodisk struktur, brudd på illusjonen, og virkemidler (Verfremdung) som hindrer publikum i å leve seg inn og i stedet inviterer dem til å tenke kritisk. Teateret skal ikke underholde, men forandre verden.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-verfremdung">
+    <div class="begrep-header" onclick="toggleBegrep('b-verfremdung')">
+      <span class="begrep-term">Verfremdung / V-effekt</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Brechts «fremmedgjøringseffekt» — teknikker som bryter illusjonen og minner publikum på at de ser teater, slik at de kan reflektere kritisk fremfor å leve seg inn. Eksempler: plakater, sanger som kommenterer handlingen, skuespillere som snakker i tredje person.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-grusomhet">
+    <div class="begrep-header" onclick="toggleBegrep('b-grusomhet')">
+      <span class="begrep-term">Grusomhetens teater</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Artauds visjon om et teater som overvelder publikum sanselig og bryter ned den psykologiske distansen. «Grusomhet» er ikke vold, men absolutt konsentrasjon og nødvendighet — ingen overflødig bevegelse, ingen tilfeldighet. Teateret som en pest som forstyrrer og renser.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-fattigteater">
+    <div class="begrep-header" onclick="toggleBegrep('b-fattigteater')">
+      <span class="begrep-term">Det fattige teateret</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Grotowskis teaterform: tilbake til teaterets grunnelementer — A spiller B for C. Ingen scenografi, kostyme, sminke eller musikk utover det skuespillerne selv skaper med kroppen. En form for reteatralisering der relasjonen mellom skuespiller og tilskuer er det eneste som teller.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-parateater">
+    <div class="begrep-header" onclick="toggleBegrep('b-parateater')">
+      <span class="begrep-term">Parateater</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Grotowskis fase 2 (1970–75): «liksom teater». Han ville ødelegge teaterkonseptet og skape et møtested der alle er seg selv — ikke A spiller B for C. Deltakerne skulle møtes som mennesker, ikke som publikum og utøvere.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-auteur">
+    <div class="begrep-header" onclick="toggleBegrep('b-auteur')">
+      <span class="begrep-term">Auteur teater / Total theatre</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>En regissør som dominerer hele den kunstneriske prosessen — tekst, scenografi, koreografi, lys — slik at forestillingen er et personlig uttrykk. Fra filmteori, brukt om regissører som Robert Wilson, Robert Lepage, Richard Foreman. Bygger på Wagners Gesamtkunstwerk og Craigs visjoner.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-postmoderne">
+    <div class="begrep-header" onclick="toggleBegrep('b-postmoderne')">
+      <span class="begrep-term">Postmoderne</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Fra ca. 1970-tallet. Kjennetegn: selvreflekterende, ironi og parodi, ingen skille mellom høy og lav kultur, retro, stiller spørsmål ved historie og tradisjoner, brudd med lineær dramaturgi, multimedial kommunikasjon. Dystopia og virkelighetsforvrengning som tematiske motiver.</p>
+      <p class="begrep-source">Kilde: Felluga, D. «General Introduction to Postmodernism.» Purdue University.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-postdramatisk">
+    <div class="begrep-header" onclick="toggleBegrep('b-postdramatisk')">
+      <span class="begrep-term">Postdramatisk</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Hans-Thies Lehmanns begrep (1970-tallet, publisert 1999): teater som bryter med dramaets konvensjoner. Brudd med narrativ tekst og lineær dramaturgi. Likestilt dramaturgi — ingen elementer er overordnet andre. Kan ses som en form for reteatralisering i det 21. århundre. NB: betyr ikke nødvendigvis avstand fra tekst — Sarah Kanes stykker er postdramatiske.</p>
+      <a class="fornyere-link" href="dramaturgi.html">→ Dramaturgi</a>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-brook4">
+    <div class="begrep-header" onclick="toggleBegrep('b-brook4')">
+      <span class="begrep-term">Peter Brooks 4 kategorier</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <ul class="bullets">
+        <li><strong>Det døde teateret</strong> — det borgerlige stilteateret som oppfører klassikere uten mål og mening for dagens publikum</li>
+        <li><strong>Det hellige teateret</strong> — Copeau, Artaud og Grotowski: teater som ritual og åndelig opplevelse, men som ikke alltid når ut til publikum</li>
+        <li><strong>Det røffe teateret</strong> — Meyerhold, Brecht og Dario Fo: folkelige former og politisk budskap</li>
+        <li><strong>Det umiddelbare teateret</strong> — Brooks ideal: et her-og-nå teater, en syntese av det hellige og det røffe</li>
+      </ul>
+      <p class="begrep-source">Kilde: Brook, P. (1968). The Empty Space.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-eksistensialisme">
+    <div class="begrep-header" onclick="toggleBegrep('b-eksistensialisme')">
+      <span class="begrep-term">Eksistensialisme</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Filosofisk retning (Sartre, Camus, de Beauvoir) som hevder at mennesket ikke har en forhåndsbestemt essens — vi er det vi gjør. Frihet og ansvar er absolutte. I teater: absurdismen er eksistensialismens sceniske uttrykk — mennesket som fanget i en meningsløs eksistens der handling allikevel kreves. Sartre og Camus var selv dramatikere.</p>
+    </div>
+  </div>
+
+  <div class="begrep" id="b-komposisjon">
+    <div class="begrep-header" onclick="toggleBegrep('b-komposisjon')">
+      <span class="begrep-term">Komposisjonselementer</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="begrep-body">
+      <p>Grunnleggende elementer i visuell komposisjon — relevante for scenografi, lysdesign og det totale sceniske uttrykket:</p>
+      <ul class="bullets">
+        <li><strong>Helhet</strong> — alle elementer virker sammen</li>
+        <li><strong>Balanse</strong> — symmetrisk eller asymmetrisk vektfordeling</li>
+        <li><strong>Kontrast</strong> — motsetninger som skaper dynamikk</li>
+        <li><strong>Rytme</strong> — gjentagelse og variasjon over tid</li>
+        <li><strong>Mønster</strong> — strukturerte gjentagelser</li>
+        <li><strong>Referanse</strong> — særlig sentralt i postmodernisme</li>
+      </ul>
+    </div>
+  </div>
+
+</div><!-- end .page -->
+
+<footer class="site-footer">
+  © 2026 · Redaktør: <a href="mailto:ren.katherine.powell@skole.rogfk.no">Ren Powell</a>
+</footer>
+
+<script>
+function toggleBegrep(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const btn = el.querySelector('.vis-btn');
+  if (btn) btn.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  document.querySelector('.theme-toggle').textContent = next === 'dark' ? '☽' : '☀︎';
+  localStorage.setItem('theme', next);
+}
+
+const saved = localStorage.getItem('theme');
+if (saved) {
+  document.documentElement.setAttribute('data-theme', saved);
+  if (saved === 'dark') document.querySelector('.theme-toggle').textContent = '☽';
+}
+</script>
+
+</body>
+</html>

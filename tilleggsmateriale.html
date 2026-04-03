@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tilleggsmateriale — Teaterfag kompendium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-home" href="index.html">← Kompendium</a>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <span class="nav-title">Tilleggsmateriale</span>
+      <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Bytt fargemodus">☀︎</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+  <h1 class="page-title">TILLEGGSMATERIALE</h1>
+  <p class="page-sub">Fordypning, diagrammer og ressurser.</p>
+
+  <!-- RETEATRALISERING -->
+  <div class="tmat-section" id="tm-reteat">
+    <div class="tmat-header" onclick="toggleTmat('tm-reteat')">
+      <span class="tmat-title">Reteatralisering</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>For reteatralistene var følgende tre prinsipper sentrale:</p>
+      <ul class="bullets" style="margin:0.5rem 0;">
+        <li>Det som skiller teater fra andre kunstarter, er teatralitet — rollelek, spill og fantasi.</li>
+        <li>Teateret har størst virkning når det er teater, ikke litteratur.</li>
+        <li>Kun ved å gjenvinne sin teatralitet, ved å fri seg fra å være tjener for litteraturen, kan teatret få en funksjon i det moderne samfunnet.</li>
+      </ul>
+      <p>Realismen og naturalismen hadde ført til en iscenesettelseskunst bygget på «titteskapet» — illusjonsscenen der skuespillerne spilte med hverandre og ikke lenger henvendte seg til publikum. Naturalismen viste interiører fra arbeidernes liv. Fra 1880-tallet ble dette motsagt av nyere retninger som symbolisme og reteatralisering.</p>
+      <p class="tmat-source">Bjørge, E. red. (2009). <em>Teater i perspektiv</em>, Tell forlag, s. 131. · Arntzen, K. Ø. «Dramatiske sjangre og sceniske former». Scenefolk.no.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-reteat')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- ABSTRAKT OG REPRESENTASJON -->
+  <div class="tmat-section" id="tm-abstrakt">
+    <div class="tmat-header" onclick="toggleTmat('tm-abstrakt')">
+      <span class="tmat-title">Abstrakt, representasjon og kontinuumet</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>I billedkunst finnes to hovedretninger: representasjonell kunst (gjenkjennelig, etterligner virkeligheten) og ikke-representasjonell kunst (former, farger, følelser uten gjenkjennelige motiver). Aristoteles skrev om <em>mimesis</em> — en form for representasjon.</p>
+      <p>Å abstrahere betyr å ta vekk detaljer. Det finnes et kontinuum fra det naturalistiske til det nesten ikke-gjenkjennelige. Abstrakt kunst er alltid forbundet med noe visuelt fra den virkelige verden — men i sterk grad bearbeidet.</p>
+      <p>I teateret: en stereotype («skurken», «heksen») er en liten grad av abstrahering. Naturalisme forsøker å ligge på den ene enden av kontinuumet. Artauds grusomhetsteater og dadaismen befinner seg på den andre.</p>
+      <img src="https://teateriperspektiv2.wordpress.com/wp-content/uploads/2019/12/abstraherings-kontiuum.jpg" alt="Abstraherings-kontinuum">
+      <p class="tmat-source">Kilde: Lumin. <em>Introduction to Art Concepts</em>.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-abstrakt')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- TO GREINER -->
+  <div class="tmat-section" id="tm-greiner">
+    <div class="tmat-header" onclick="toggleTmat('tm-greiner')">
+      <span class="tmat-title">Moderne teater: to greiner</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>Fra fin de siècle hadde kunstnerne to ulike tilnærminger til det å uttrykke menneskets tilstand:</p>
+      <p><strong>Vitenskapsmennene</strong> — inspirert av Darwin. Årsak og virkning, det logiske og objektive. Naturalisme, realisme, og etter hvert Brechts episke teater. (Merk: Brecht begynte som ekspresjonist, men hoppet over til den andre grenen.)</p>
+      <p><strong>Prestene og demonene</strong> — inspirert av Freud og det ubevisste. Det spirituelle, intuitive og subjektive. Symbolisme, ekspresjonisme, surrealisme, og Artauds grusomhetsteater. Langs kontinuumet fra det abstrakte mot det ikke-representasjonelle.</p>
+      <p>Da surrealistene begynte å lene seg mot politikken og dermed nærmet seg den «objektive» grenen, gikk Artaud den andre veien og gravde seg dypere ned i det surrealistene eksperimenterte med.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-greiner')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- POSTMODERNE -->
+  <div class="tmat-section" id="tm-postmoderne">
+    <div class="tmat-header" onclick="toggleTmat('tm-postmoderne')">
+      <span class="tmat-title">Postmodernisme — 9 trekk</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <ul class="bullets">
+        <li>Selvreflekterende</li>
+        <li>Ironi og parodi</li>
+        <li>Ingen skille mellom høy og lav kultur</li>
+        <li>Retro</li>
+        <li>Stiller spørsmål til historie og tradisjonelle oppfatninger</li>
+        <li>Brudd med tradisjonell bruk av tid i dramaturgi</li>
+        <li>Dystopia — en verden der penger betyr makt; paranoia og overvåkning</li>
+        <li>Virkelighetsforvrengning</li>
+        <li>Multimedial kommunikasjon fremfor bare litteratur eller skrift</li>
+      </ul>
+      <p class="tmat-source">Felluga, D. «General Introduction to Postmodernism.» Introductory Guide to Critical Theory. Purdue University.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-postmoderne')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- AUTEUR OG TOTAL THEATRE -->
+  <div class="tmat-section" id="tm-auteur">
+    <div class="tmat-header" onclick="toggleTmat('tm-auteur')">
+      <span class="tmat-title">Auteur teater og total theatre</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <div class="tmat-quote">
+        <p>«In the contemporary theatre there are directors who overtly strive to create 'Total Theatre'. These are, generally, also directors who create the work they stage — frequently supplanting the playwright — choreograph the movements, design the setting and plot the lighting, and sometimes perform on stage as well, qualifying them as 'auteurs', a French term developed in New Wave film theory to describe a director who so dominates the film-making process that he or she can be seen as the 'author' because the final product is a personal expression. [...] Strikingly, many of these directors are also visual artists; their performances are primarily physical rather than text-based; and they promote a style of 'Total Theatre' that seeks not only artistic unity as in Wagner's Gesamtkunstwerk, but also to break through the naturalistic 'fourth wall' and unite performers and audience.»</p>
+      </div>
+      <p>Eksempler på auteur-regissører: Robert Wilson, Richard Foreman, Robert Lepage. Tradisjonen går tilbake til Gordon Craig, og det er en direkte linje fra Kandinskys <em>The Yellow Sound</em> (1912) til Lepages <em>Damnation of Faust</em> (1999).</p>
+      <p class="tmat-source">Kilde: <em>The Cambridge Introduction to Theatre Directing</em>.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-auteur')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- VERFREMDUNGSTEKNIKKER -->
+  <div class="tmat-section" id="tm-veffekt">
+    <div class="tmat-header" onclick="toggleTmat('tm-veffekt')">
+      <span class="tmat-title">Verfremdungsteknikker</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>Brechts regiteknikker for å oppnå fremmedgjøring:</p>
+      <ul class="bullets" style="margin-top:0.5rem;">
+        <li>Fortell publikum hva de skal få se i en prolog. Avsløre hvordan det ender — be dem finne ut <em>hvorfor</em>.</li>
+        <li>Kommenter det som skjer på scenen gjennom projeksjoner og plakater.</li>
+        <li>La skuespilleren spille rollen i tredje person.</li>
+        <li>Stans spillet med en sang om det tilskuerne nettopp så — sangen belyser situasjonen fra ulike sider.</li>
+        <li>Stans spillet og henvend deg direkte til publikum.</li>
+        <li>La publikum se teknikerne og lyskasterne.</li>
+        <li>La skuespillerne skifte scene for åpen scene.</li>
+        <li>Avslutt med en epilog der publikum minnes på at det de opplevde var teater — og at det som gjelder, er å forandre verden.</li>
+      </ul>
+      <p class="tmat-source">Kilde: Bjørge, E. mfl. (2009), s. 153.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-veffekt')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- AGITPROP -->
+  <div class="tmat-section" id="tm-agitprop">
+    <div class="tmat-header" onclick="toggleTmat('tm-agitprop')">
+      <span class="tmat-title">Agitprop teater</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>Fra «agitation og propaganda». Begynte som en formell del av den kommunistiske regjeringen i tidlig Sovjet. Kjennetegn: flyttbare forestillinger, deklamatorisk og gjentagende — ofte gateteater. Arbeiderklasse, moderne, teatralsk. Populært på 1920-tallet.</p>
+      <p>Vsevolod Meyerhold ville at teateret skulle gjenspeile oktoberrevolusjonen. Hans agitprop-teater var ikke-realistisk og i tjeneste til arbeiderklassen. Skuespillerne skulle presentere — ikke representere — rollefigurer. Dette influerte Brecht direkte.</p>
+      <p class="tmat-source">Kilde: <em>Radical Revisions: Rereading 1930s Culture</em>.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-agitprop')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- THE EMPTY SPACE -->
+  <div class="tmat-section" id="tm-brook">
+    <div class="tmat-header" onclick="toggleTmat('tm-brook')">
+      <span class="tmat-title">Peter Brook: The Empty Space</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>Publisert 1968. Brook utforsker hva teater er og hvilket formål det skal ha. Han diskuterer hvordan teateret kan forandres til en syntese mellom det hellige og det røffe.</p>
+      <ul class="bullets" style="margin:0.5rem 0;">
+        <li><strong>Det døde teateret</strong> — det borgerlige stilteateret som oppfører klassikere uten mål og mening for dagens publikum</li>
+        <li><strong>Det hellige teateret</strong> — Copeau, Artaud, Grotowski: teater som ritual, men som ikke alltid når ut til publikum</li>
+        <li><strong>Det røffe teateret</strong> — Meyerhold, Brecht, Dario Fo: folkelige former og politisk budskap</li>
+        <li><strong>Det umiddelbare teateret</strong> — Brooks ideal: en syntese av det hellige og det røffe, et her-og-nå teater</li>
+      </ul>
+      <p>Brook understreker teatrets rituelle karakter og øyeblikkets kunst: skuespiller og publikum på samme nivå.</p>
+      <div class="tmat-quote">
+        <p>«As you read this book, it is already moving out of date.»</p>
+      </div>
+      <p class="tmat-source">Brook, P. (1968/1996). <em>The Empty Space</em>. · Eriksen (2009), s. 182.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-brook')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- GROTOWSKI 5 FASER -->
+  <div class="tmat-section" id="tm-grotowski">
+    <div class="tmat-header" onclick="toggleTmat('tm-grotowski')">
+      <span class="tmat-title">Grotowskis 5 faser</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+
+      <div class="row">
+        <div class="row-label">Fase 1</div>
+        <div class="row-content"><strong>Det fattige teateret · 1959–1970</strong></div>
+      </div>
+      <ul class="bullets" style="margin:0.3rem 0 0.8rem 0;">
+        <li>Tilbake til teaterets grunnelementer: A spiller B for C</li>
+        <li>Kun skuespiller — ingen scenografi, sminke, kostyme eller musikk utover det kroppen selv lager</li>
+        <li>Én rekvisitt representerte flere gjenstander — transformerte objekter som symboler</li>
+        <li>Ingen titteskapscene: tilskuerne ble plassert ulikt for hver forestilling for riktig psykologisk distanse</li>
+        <li>Rituell opplevelse — skuespillerne som nonner og munker med absolutt fysisk og psykisk kontroll</li>
+        <li>I 1970 følte Grotowski at de var «fullkomne» som kunstnere og bestemte seg for å slutte å lage forestillinger</li>
+      </ul>
+      <p style="font-size:12px; color:var(--text3);">Ryszard Cieslak var Grotowskis viktigste skuespiller i denne perioden — kjent for rollen som Prinsen i <em>The Constant Prince</em> (1965).</p>
+
+      <div class="row" style="margin-top:0.8rem;">
+        <div class="row-label">Fase 2</div>
+        <div class="row-content"><strong>Parateater · 1970–1975</strong></div>
+      </div>
+      <ul class="bullets" style="margin:0.3rem 0 0.8rem 0;">
+        <li>«Liksom teater» — han ville ødelegge teaterkonseptet</li>
+        <li>Ikke A spiller B for C — alle skulle være seg selv (A)</li>
+        <li>Et møtested for mennesker, ikke utøvere og publikum</li>
+        <li>«Research University» ved Théâtres des Nations i Warszawa — deltakerne dro til skogen i 24 timer. Peter Brook og Joseph Chaikin deltok.</li>
+        <li>Filmen <em>My Dinner with Andre</em> (1981) — Andre Gregory beskriver sin opplevelse med parateater</li>
+      </ul>
+
+      <div class="row" style="margin-top:0.8rem;">
+        <div class="row-label">Fase 3</div>
+        <div class="row-content"><strong>Theatre of Sources · ca. 1976–1982</strong></div>
+      </div>
+      <ul class="bullets" style="margin:0.3rem 0 0.8rem 0;">
+        <li>Reiste til Japan, India, Haiti, Mexico, Afrika og andre steder</li>
+        <li>Studerte rituelle og performative tradisjoner på tvers av kulturer</li>
+        <li>Søkte etter universelle «kilderteknikker» som virker på tvers av kulturell kontekst</li>
+        <li>Gjenopptok fysisk, vokal og psykologisk disiplin fra fase 1</li>
+      </ul>
+
+      <div class="row" style="margin-top:0.8rem;">
+        <div class="row-label">Fase 4</div>
+        <div class="row-content"><strong>Objective Drama · ca. 1983–1986</strong></div>
+      </div>
+      <ul class="bullets" style="margin:0.3rem 0 0.8rem 0;">
+        <li>Arbeidet ved UC Irvine i California</li>
+        <li>Studerte performanceteknikker fra Haiti, Korea, India og Karibia</li>
+        <li>Søkte etter teknikker som virker uavhengig av kulturell bakgrunn — «objektive» i den forstand at de ikke tilhører én tradisjon</li>
+      </ul>
+
+      <div class="row" style="margin-top:0.8rem;">
+        <div class="row-label">Fase 5</div>
+        <div class="row-content"><strong>Art as Vehicle · ca. 1986–1999</strong></div>
+      </div>
+      <ul class="bullets" style="margin:0.3rem 0 0.8rem 0;">
+        <li>Workcenter of Jerzy Grotowski i Pontevedra, Italia</li>
+        <li>Skiftet fra å fremføre <em>for</em> et publikum til å bruke fremførelsen som et indre transformativt arbeid for utøveren selv</li>
+        <li>Thomas Richards ble hans nærmeste samarbeidspartner og arving</li>
+      </ul>
+
+      <div class="tmat-close" onclick="toggleTmat('tm-grotowski')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- LENKER -->
+  <div class="divider-label mt">Ressurser</div>
+  <a class="wakelet-link" href="https://teateriperspektiv2.wordpress.com" target="_blank">Teater i perspektiv — blogg ↗</a>
+  <a class="wakelet-link" href="https://teateriperspektiv2.wordpress.com/2026/04/03/vurdering/" target="_blank">Vurdering ↗</a>
+  <a class="wakelet-link" href="https://teateriperspektiv2.wordpress.com/2026/04/03/skyggeregnskap/" target="_blank">Skyggeregnskap ↗</a>
+  <a class="wakelet-link" href="begrep.html">Begrep — test deg selv ↗</a>
+
+</div><!-- end .page -->
+
+<footer class="site-footer">
+  © 2026 · Redaktør: <a href="mailto:ren.katherine.powell@skole.rogfk.no">Ren Powell</a>
+</footer>
+
+<script>
+function toggleTmat(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const btn = el.querySelector('.tmat-header .vis-btn');
+  if (btn) btn.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  document.querySelector('.theme-toggle').textContent = next === 'dark' ? '☽' : '☀︎';
+  localStorage.setItem('theme', next);
+}
+
+const saved = localStorage.getItem('theme');
+if (saved) {
+  document.documentElement.setAttribute('data-theme', saved);
+  if (saved === 'dark') document.querySelector('.theme-toggle').textContent = '☽';
+}
+</script>
+
+</body>
+</html>
