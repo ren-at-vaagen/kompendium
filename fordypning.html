@@ -23,7 +23,12 @@
   <p class="page-sub">Fornyere i dybden · Teater som politisk handling · Begrep</p>
 
   <!-- ============================================================ -->
-  <div class="divider-label mt">Fornyere i dybden</div>
+  <div class="grp-section" id="grp-fornyere">
+  <div class="grp-header" onclick="toggleGrp('grp-fornyere')">
+    <span class="grp-title">Fornyere i dybden</span>
+    <button type="button" class="vis-btn">Vis</button>
+  </div>
+  <div class="grp-body">
 
   <!-- STANISLAVSKI -->
   <div class="tmat-section" id="tm-stanis">
@@ -223,7 +228,15 @@
   </div>
 
   <!-- ============================================================ -->
-  <div class="divider-label mt">Teater som politisk handling</div>
+  </div><!-- end grp-body -->
+  </div><!-- end grp-section -->
+
+  <div class="grp-section" id="grp-politisk">
+  <div class="grp-header" onclick="toggleGrp('grp-politisk')">
+    <span class="grp-title">Teater som politisk handling</span>
+    <button type="button" class="vis-btn">Vis</button>
+  </div>
+  <div class="grp-body">
 
   <!-- AGITPROP -->
   <div class="tmat-section" id="tm-agitprop">
@@ -266,7 +279,15 @@
   </div>
 
   <!-- ============================================================ -->
-  <div class="divider-label mt">Begrep — Test deg selv</div>
+  </div><!-- end grp-body -->
+  </div><!-- end grp-section -->
+
+  <div class="grp-section" id="grp-begrep">
+  <div class="grp-header" onclick="toggleGrp('grp-begrep')">
+    <span class="grp-title">Begrep — Test deg selv</span>
+    <button type="button" class="vis-btn">Vis</button>
+  </div>
+  <div class="grp-body">
 
   <!-- GRUNNLEGGENDE -->
   <div class="tmat-section" id="tm-beg-grunn">
@@ -899,7 +920,15 @@
   </div>
 
   <!-- ============================================================ -->
-  <div class="divider-label mt">Vurdering og skriving</div>
+  </div><!-- end grp-body -->
+  </div><!-- end grp-section -->
+
+  <div class="grp-section" id="grp-vurdering">
+  <div class="grp-header" onclick="toggleGrp('grp-vurdering')">
+    <span class="grp-title">Vurdering og skriving</span>
+    <button type="button" class="vis-btn">Vis</button>
+  </div>
+  <div class="grp-body">
 
   <!-- BLOOMS -->
   <div class="tmat-section" id="tm-blooms">
@@ -997,7 +1026,15 @@
   </div>
 
   <!-- ============================================================ -->
-  <div class="divider-label mt">Ressurser</div>
+  </div><!-- end grp-body -->
+  </div><!-- end grp-section -->
+
+  <div class="grp-section" id="grp-ressurser">
+  <div class="grp-header" onclick="toggleGrp('grp-ressurser')">
+    <span class="grp-title">Ressurser</span>
+    <button type="button" class="vis-btn">Vis</button>
+  </div>
+  <div class="grp-body">
 
   <div class="tmat-section" id="tm-simplified">
     <div class="tmat-header" onclick="toggleTmat('tm-simplified')">
@@ -1015,13 +1052,23 @@
   <a class="wakelet-link" href="https://teateriperspektiv2.wordpress.com" target="_blank">Tilleggsmateriale — blogg ↗</a>
   <a class="wakelet-link" href="https://padlet.com/vaagendrama/remake-of-tip1-teaterhistorie-60kpkhgumkg28n5d" target="_blank">Teaterhistorie — Padlet ↗</a>
 
+  </div><!-- end grp-body -->
+  </div><!-- end grp-section -->
+
 </div><!-- end .page -->
 
 <footer class="site-footer">
-  © 2026 · Redaktør: <a href="mailto:ren.powell@stavanger.kommune.no">Ren Powell</a>
+  © 2026 · Redaktør: <a href="mailto:ren.katherine.powell@skole.rogfk.no">Ren Powell</a>
 </footer>
 
 <script>
+
+function toggleGrp(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const btn = el.querySelector('.grp-header .vis-btn');
+  if (btn) btn.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
 function toggleTmat(id) {
   const el = document.getElementById(id);
   el.classList.toggle('open');
@@ -1053,6 +1100,38 @@ if (saved) {
 </script>
 
 <style>
+
+.grp-section {
+  border-bottom: 1px solid var(--border2);
+  margin-bottom: 0.2rem;
+}
+
+.grp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid var(--border2);
+}
+
+.grp-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text3);
+}
+
+.grp-body {
+  display: none;
+  padding-top: 0.2rem;
+}
+
+.grp-section.open > .grp-body {
+  display: block;
+}
 .section-label-static {
   font-size: 11px;
   font-weight: 700;
