@@ -27,8 +27,9 @@
   <!-- Kopier inn «Search code»-snippeten nedenfor denne kommentaren -->
 
   <div style="margin-top:1rem;">
-    <script async src="https://cse.google.com/cse.js?cx=PARTNER-PUB-XXXXXXXXX:XXXXXXXXX"></script>
-    <div class="gcse-search"></div>
+  <script async src="https://cse.google.com/cse.js?cx=2653249d21f1e4f3c">
+</script>
+<div class="gcse-search"></div>
   </div>
 
 </div><!-- end .page -->
