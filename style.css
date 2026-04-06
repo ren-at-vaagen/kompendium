@@ -1351,3 +1351,16 @@ nav {
     max-width: 680px;
   }
 }
+ 
+/* ── SEARCH LINK ── */
+.search-link {
+  font-size: 18px;
+  color: var(--text3);
+  text-decoration: none;
+  line-height: 1;
+  padding: 0;
+}
+ 
+.search-link:hover {
+  color: var(--text);
+}
