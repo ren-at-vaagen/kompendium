@@ -14,6 +14,7 @@
     <div style="display:flex; align-items:center; gap:0.75rem;">
       <span class="nav-title">Fordypning</span>
       <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Bytt fargemodus">☀︎</button>
+      <a href="sok.html" class="search-link" aria-label="Søk">⌕</a>
     </div>
   </div>
 </nav>
@@ -23,6 +24,75 @@
   <p class="page-sub">Fornyere i dybden · Teater som politisk handling · Begrep</p>
 
   <!-- ============================================================ -->
+  <div class="grp-section" id="grp-middelalder">
+  <div class="grp-header" onclick="toggleGrp('grp-middelalder')">
+    <span class="grp-title">Middelalderens teaterformer</span>
+    <button type="button" class="vis-btn">Vis</button>
+  </div>
+  <div class="grp-body">
+
+  <div class="tmat-section" id="tm-middel-former">
+    <div class="tmat-header" onclick="toggleTmat('tm-middel-former')">
+      <span class="tmat-title">Seks teaterformer fra middelalderen</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+
+      <div class="begrep" id="bg-liturgisk">
+        <div class="begrep-header" onclick="toggleBegrep('bg-liturgisk')">
+          <span class="begrep-term">Liturgisk drama</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Den tidligste formen, som vokste ut av messens ritualer på 900-tallet. Fremført av geistlige inne i kirken, på latin. Dramatiserte bibelske hendelser — særlig påske og jul. Ikke ment som underholdning, men som religiøs formidling.</p></div>
+      </div>
+
+      <div class="begrep" id="bg-farse">
+        <div class="begrep-header" onclick="toggleBegrep('bg-farse')">
+          <span class="begrep-term">Farse</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>En kort komisk pause mellom de lengre stykkene — løs, folkelig og gjerne grov humor. Ordet kommer fra det franske <em>farce</em> — å fylle, stoppe i. Fremført på torg og markeder av lekfolk.</p></div>
+      </div>
+
+      <div class="begrep" id="bg-pasjonspill">
+        <div class="begrep-header" onclick="toggleBegrep('bg-pasjonspill')">
+          <span class="begrep-term">Pasjonsspill</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Dramatisering av Jesu lidelse, død og oppstandelse. Kunne vare flere dager og involvere hele lokalsamfunnet. Den mest kjente tradisjonen lever videre i Oberammergau i Bayern, der spillet har blitt fremført siden 1634. <a href="https://www.passionsspiele-oberammergau.de/en/home" target="_blank">→ Oberammergau pasjonsspill ↗</a></p></div>
+      </div>
+
+      <div class="begrep" id="bg-mirakelspill">
+        <div class="begrep-header" onclick="toggleBegrep('bg-mirakelspill')">
+          <span class="begrep-term">Mirakelspill</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Dramatisering av helgeners liv, mirakler og martyrium. Populære i Frankrike og England. Ofte fremført på festdager knyttet til den aktuelle helgenen.</p></div>
+      </div>
+
+      <div class="begrep" id="bg-mysterispill">
+        <div class="begrep-header" onclick="toggleBegrep('bg-mysterispill')">
+          <span class="begrep-term">Mysterispill</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Bibelske fortellinger fra skapelsen til dommedag, fremført på spillvogner (pageant wagons) som beveget seg gjennom byene. Lekfolk spilte rollene. Kunne involvere svært mange scener og vare over flere dager.</p></div>
+      </div>
+
+      <div class="begrep" id="bg-moraliteter">
+        <div class="begrep-header" onclick="toggleBegrep('bg-moraliteter')">
+          <span class="begrep-term">Moraliteter</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Allegoriske stykker der personifiserte abstraksjoner — som Synd, Dyd, Rikdom og Død — kjemper om menneskesjelen. Ikke bibelske historier, men moralske lærestykker. Mest kjent: <em>Everyman</em> (ca. 1510).</p></div>
+      </div>
+
+      <div class="tmat-close" onclick="toggleTmat('tm-middel-former')">Skjul ↑</div>
+    </div>
+  </div>
+
+  </div><!-- end grp-body -->
+  </div><!-- end grp-section -->
+
   <div class="grp-section" id="grp-fornyere">
   <div class="grp-header" onclick="toggleGrp('grp-fornyere')">
     <span class="grp-title">Fornyere i dybden</span>
@@ -225,6 +295,39 @@
       </div>
       <div class="tmat-close" onclick="toggleTmat('tm-5truths')">Skjul ↑</div>
     </div>
+
+  <!-- MEYERHOLD: BIOMEKANIKK -->
+  <div class="tmat-section" id="tm-meyerhold-bio">
+    <div class="tmat-header" onclick="toggleTmat('tm-meyerhold-bio')">
+      <span class="tmat-title">Vsevolod Meyerhold — Biomekanikk</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>Meyerhold utviklet biomekanikk som en systematisk skuespillertrening basert på presis fysisk kontroll. Bevegelsen er organisert i en syklus av fire elementer:</p>
+
+      <div class="row" style="margin-top:0.8rem;">
+        <div class="row-label">Otkaz</div>
+        <div class="row-content"><strong>Forberedende motbevegelse</strong> — for å gå fremover lener du deg først bakover; for å slå ned løfter du armen først. Signaliserer intensjonen og samler energi.</div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Posyl</div>
+        <div class="row-content"><strong>Selve utførelsen</strong> — «støtet», oppfyllelsen av bevegelsen som otkaz initierte.</div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Tochka / Stoika</div>
+        <div class="row-content"><strong>Det endelige stoppet</strong> — øyeblikket der handlingen fryses i en presis positur. Markerer avslutningen mens indre spenning opprettholdes.</div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Tormoz</div>
+        <div class="row-content"><strong>Det bevisste kontrollelementet</strong> — regulerer rytmen gjennom hele syklusen, forhindrer uklare bevegelser og sikrer at skuespilleren forblir herre over sin fysiske energi.</div>
+      </div>
+
+      <p class="tmat-source">Kilde: Leach, R. (1989). <em>Vsevolod Meyerhold</em>. Cambridge University Press.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-meyerhold-bio')">Skjul ↑</div>
+    </div>
   </div>
 
   <!-- ============================================================ -->
@@ -373,114 +476,6 @@
     </div>
   </div>
 
-  <!-- PRODUKSJON OG ROLLER -->
-  <div class="tmat-section" id="tm-beg-prod">
-    <div class="tmat-header" onclick="toggleTmat('tm-beg-prod')">
-      <span class="tmat-title">Produksjon og roller</span>
-      <button type="button" class="vis-btn">Vis</button>
-    </div>
-    <div class="tmat-body">
-
-      <div class="begrep" id="bg-teaterpedagog">
-        <div class="begrep-header" onclick="toggleBegrep('bg-teaterpedagog')">
-          <span class="begrep-term">Teaterpedagog</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>En lærer som underviser i teater.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-produksjon">
-        <div class="begrep-header" onclick="toggleBegrep('bg-produksjon')">
-          <span class="begrep-term">Produksjon</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>Å lage og gjennomføre en forestilling.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-produsent">
-        <div class="begrep-header" onclick="toggleBegrep('bg-produsent')">
-          <span class="begrep-term">Produsent</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>Den som har ansvar for planlegging og gjennomføring.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-inspisient">
-        <div class="begrep-header" onclick="toggleBegrep('bg-inspisient')">
-          <span class="begrep-term">Inspisient / Stage manager</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>Den som holder oversikt og sørger for at alt skjer til riktig tid.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-regi">
-        <div class="begrep-header" onclick="toggleBegrep('bg-regi')">
-          <span class="begrep-term">Regi</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>Å bestemme hvordan forestillingen skal se ut og fungere.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-regissør">
-        <div class="begrep-header" onclick="toggleBegrep('bg-regissør')">
-          <span class="begrep-term">Regissør</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>Den som leder skuespillerne og det kunstneriske arbeidet.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-skuespiller">
-        <div class="begrep-header" onclick="toggleBegrep('bg-skuespiller')">
-          <span class="begrep-term">Skuespiller</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>Den som spiller roller på scenen.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-scenograf">
-        <div class="begrep-header" onclick="toggleBegrep('bg-scenograf')">
-          <span class="begrep-term">Scenograf</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>Den som lager scenebilde og rom.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-rekvisitt">
-        <div class="begrep-header" onclick="toggleBegrep('bg-rekvisitt')">
-          <span class="begrep-term">Rekvisitt</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>En gjenstand som brukes på scenen i en forestilling.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-lysdesign">
-        <div class="begrep-header" onclick="toggleBegrep('bg-lysdesign')">
-          <span class="begrep-term">Lys-/lyddesign</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>Arbeid med lys og lyd i forestillingen.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-koreograf">
-        <div class="begrep-header" onclick="toggleBegrep('bg-koreograf')">
-          <span class="begrep-term">Koreograf</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>Den som lager og leder bevegelse og dans.</p></div>
-      </div>
-
-      <div class="begrep" id="bg-dramaturg">
-        <div class="begrep-header" onclick="toggleBegrep('bg-dramaturg')">
-          <span class="begrep-term">Dramaturg</span>
-          <button type="button" class="vis-btn">Vis</button>
-        </div>
-        <div class="begrep-body"><p>Den som arbeider med tekst og oppbygning av forestillingen.</p></div>
-      </div>
-
-      <div class="tmat-close" onclick="toggleTmat('tm-beg-prod')">Skjul ↑</div>
-    </div>
-  </div>
-
   <!-- VURDERING OG SKUESPILL -->
   <div class="tmat-section" id="tm-beg-vurd">
     <div class="tmat-header" onclick="toggleTmat('tm-beg-vurd')">
@@ -578,6 +573,75 @@
       </div>
 
       <div class="tmat-close" onclick="toggleTmat('tm-beg-vurd')">Skjul ↑</div>
+    </div>
+  </div>
+
+
+  <!-- SCENISKE VIRKEMIDLER -->
+  <div class="tmat-section" id="tm-beg-sceniske">
+    <div class="tmat-header" onclick="toggleTmat('tm-beg-sceniske')">
+      <span class="tmat-title">Sceniske virkemidler</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>Alt det scenen kommuniserer gjennom utover tekst og skuespill. Disse elementene virker sammen og skaper forestillingens estetiske uttrykk:</p>
+      <div class="begrep" id="bg-rekvisitter">
+        <div class="begrep-header" onclick="toggleBegrep('bg-rekvisitter')">
+          <span class="begrep-term">Rekvisitter</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Gjenstander brukt av skuespillerne på scenen — kan bære symbolsk mening eller støtte den fysiske handlingen.</p></div>
+      </div>
+      <div class="begrep" id="bg-kostymer">
+        <div class="begrep-header" onclick="toggleBegrep('bg-kostymer')">
+          <span class="begrep-term">Kostymer</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Hva skuespillerne har på seg — kommuniserer tid, sted, karakter og sosial status.</p></div>
+      </div>
+      <div class="begrep" id="bg-lyd-virk">
+        <div class="begrep-header" onclick="toggleBegrep('bg-lyd-virk')">
+          <span class="begrep-term">Lyd</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Musikk, lydeffekter og stillhet — setter stemning, markerer overganger og kan kommentere handlingen.</p></div>
+      </div>
+      <div class="begrep" id="bg-lys-virk">
+        <div class="begrep-header" onclick="toggleBegrep('bg-lys-virk')">
+          <span class="begrep-term">Lys</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Styrer publikums fokus, skaper atmosfære og kan markere tid og sted. Kan brukes realistisk eller symbolsk.</p></div>
+      </div>
+      <div class="begrep" id="bg-scenografi-virk">
+        <div class="begrep-header" onclick="toggleBegrep('bg-scenografi-virk')">
+          <span class="begrep-term">Scenografi</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Det visuelle rommet — scenebilde, møbler, baktepper og arkitektoniske elementer som definerer forestillingens verden.</p></div>
+      </div>
+      <div class="begrep" id="bg-sminke-virk">
+        <div class="begrep-header" onclick="toggleBegrep('bg-sminke-virk')">
+          <span class="begrep-term">Sminke</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Forsterker eller transformerer skuespillerens ansikt — kan understreke karakter, alder eller være del av et stilisert uttrykk.</p></div>
+      </div>
+      <div class="begrep" id="bg-dukke-virk">
+        <div class="begrep-header" onclick="toggleBegrep('bg-dukke-virk')">
+          <span class="begrep-term">Dukke / Maske</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Masker skjuler eller erstatter ansiktet og abstraherer karakteren. Dukker og figurer kan representere karakterer uten en skuespillerkropp.</p></div>
+      </div>
+      <div class="begrep" id="bg-spillestil-virk">
+        <div class="begrep-header" onclick="toggleBegrep('bg-spillestil-virk')">
+          <span class="begrep-term">Spillestil</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="begrep-body"><p>Det helhetlige ekspressive uttrykket skuespillerne skaper — realistisk, stilisert, deklamatorisk eller konvensjonell. Se <a href="analyse.html">Analyse</a>.</p></div>
+      </div>
+      <div class="tmat-close" onclick="toggleTmat('tm-beg-sceniske')">Skjul ↑</div>
     </div>
   </div>
 
@@ -1038,7 +1102,7 @@
 
   <a class="wakelet-link" href="https://view.genially.com/61dc68afc7f51e0dfd3d2e75" target="_blank">Ridiculously Simplified Theater History — Genially ↗</a>
   <a class="wakelet-link" href="https://snl.no/norsk_teaterhistorie" target="_blank">Norsk teaterhistorie — Store norske leksikon ↗</a>
-  <a class="wakelet-link" href="https://teateriperspektiv2.wordpress.com" target="_blank">Tilleggsmateriale — blogg ↗</a>
+  <a class="wakelet-link" href="https://teateriperspektiv2.wordpress.com" target="_blank">Finner ikke det du trenger? Søk i tilleggsmateriale — blogg ↗</a>
   <a class="wakelet-link" href="https://padlet.com/vaagendrama/remake-of-tip1-teaterhistorie-60kpkhgumkg28n5d" target="_blank">Teaterhistorie — Padlet ↗</a>
 
   </div><!-- end grp-body -->
