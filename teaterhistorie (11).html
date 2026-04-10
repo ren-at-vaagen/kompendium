@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaterhistorie — Teaterfag kompendium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-home" href="index.html">← Kompendium</a>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <span class="nav-title">Teaterhistorie</span>
+      <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Bytt fargemodus">☀︎</button>
+      <a href="sok.html" class="search-link" aria-label="Søk">⌕ Søk</a>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="page">
+  <h1 class="page-title">TEATERHISTORIE</h1>
+  <p class="page-sub">Epoker, kontekst og sammenhenger — fra antikken til i dag. For dybdeportretter av enkeltpersoner, se <a href="teaterfornyere.html">Teaterfornyere →</a></p>
+  <div class="disclaimer">
+    Dette kurset dekker vestlig teaterhistorie. En fullstendig oversikt ville inkludert tradisjoner fra Asia, Afrika og resten av verden — disse er like rike og like viktige.
+    <br><a href="teaterfornyere.html#underrepresenterte">→ Les mer om de underrepresenterte</a>
+    <br><a href="https://teateriperspektiv2.wordpress.com/category/ikke-vestlige-teater/" target="_blank">→ Ikke-vestlige teatertradisjoner — tilleggsmateriale ↗</a>
+  </div>
+
+  <div class="divider-label">Frem til 1875</div>
+
+  <!-- ANTIKKEN -->
+  <div class="epoch" id="ep-antikk">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Antikken</div>
+        <div class="epoch-years">547 fvt – 453 vt</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-antikk')">Vis</button>
+    </div>
+    <div class="epoch-body">
+
+      <div class="divider-label">Den greske antikken · 547–31 fvt</div>
+      <div class="row">
+        <div class="row-label">Samfunn</div>
+        <div class="row-content">Gresk bystat. Teater knyttet til religiøse festivaler for Dionysos.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">Religiøs feiring, borgerlig deltakelse, katarsis (Aristoteles).</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Materiell</div>
+        <div class="row-content">Utendørs amfiteater. Masker, kothurner. Bare mannlige skuespillere. Kor. Maks tre skuespillere på scenen.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Dramatikere</div>
+        <div class="row-content">Sofokles · Euripides · Aristofanes</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Tragedie og komedie</div>
+        <div class="row-content">Aristoteles analyserte tragedien i <em>Poetikken</em> (bok I) — den er bevart og er grunnlaget for vestlig dramateori. Han skrev også en bok om komedien (bok II), men den er tapt. Vi vet derfor langt mer om den greske tragediens teori enn komedienes. Aristofanes er den viktigste overleverte komedieskriveren — kjent for politisk satire, absurd humor og direkte henvendelse til publikum. Hans komedier brøt bevisst med den fjerde veggen og latterliggjorde samtidige politikere og filosofer, inkludert Sokrates.</div>
+      </div>
+
+      <a class="pensum-link" href="https://www.nb.no/items/10f4c1c0b527d69dd1915e803ee512aa" target="_blank">Pensumbok · Gresk antikken · side 15–46 ↗</a>
+
+      <div style="border-top: 1px solid var(--border2); margin: 1.2rem 0;"></div>
+
+      <div class="divider-label">Den romerske antikken · 300 fvt – 453 vt</div>
+      <div class="row">
+        <div class="row-label">Samfunn</div>
+        <div class="row-content">Romersk imperium. Teater som masseunderholdning og politisk spektakel.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">Underholdning, propaganda og feiring av statsmakt. Brød og sirkus — teater og spill som middel til å holde befolkningen fornøyd.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Materiell</div>
+        <div class="row-content">Innendørs og utendørs teatre. Mer spektakulære og voldsomme oppsetninger enn gresk tradisjon.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Dramatikere</div>
+        <div class="row-content">Plautus · Seneca · <a class="name-pill" href="teaterfornyere.html#terents">Terents</a></div>
+      </div>
+
+      <a class="pensum-link" href="https://www.nb.no/items/10f4c1c0b527d69dd1915e803ee512aa" target="_blank">Pensumbok · Romersk antikken · side 46–56 ↗</a>
+      <div class="epoch-close" onclick="toggleEpoch('ep-antikk')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <!-- MIDDELALDEREN -->
+  <div class="epoch" id="ep-middel">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Middelalderen</div>
+        <div class="epoch-years">500–1500 vt</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-middel')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <div class="row">
+        <div class="row-label">Samfunn</div>
+        <div class="row-content">Kristen Europa. Kirken dominerer kultur og politikk. Lite skriftlig drama — muntlig tradisjon.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">Formidling av bibelsk innhold til en analfabetisk befolkning. Teater som massemedia og religiøs opplæring.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Materiell</div>
+        <div class="row-content">Mysteriespill og moralitetsspill. Spillvogner i gatene (pageant wagons). Lekfolk som skuespillere. Allegoriske figurer.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Dramatikere</div>
+        <div class="row-content">Anonym · Hrotsvit</div>
+      </div>
+      <a class="pensum-link" href="https://www.nb.no/items/10f4c1c0b527d69dd1915e803ee512aa" target="_blank">Pensumbok · side 57–82 ↗</a>
+      <div class="epoch-close" onclick="toggleEpoch('ep-middel')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <!-- RENESSANSEN -->
+  <div class="epoch" id="ep-renes">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Renessansen</div>
+        <div class="epoch-years">1453–1650</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-renes')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <div class="row">
+        <div class="row-label">Samfunn</div>
+        <div class="row-content">Gjenoppdagelse av antikken. Humanisme. Fremvekst av profesjonelle teaterkompanier og faste teaterbygninger.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">Underholdning, prestisje for fyrstehoff, utforskning av det menneskelige.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Materiell</div>
+        <div class="row-content">Commedia dell'arte (Italia): masker, faste roller, improvisasjon. Elisabetansk teater: åpne scener, tekstbasert. Perspektivscenografi innføres.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Dramatikere</div>
+        <div class="row-content">
+          <a class="name-pill" href="teaterfornyere.html#shakespeare">Shakespeare</a>
+          <a class="name-pill" href="teaterfornyere.html#marlowe">Marlowe</a>
+          <a class="name-pill" href="teaterfornyere.html#lopevega">Lope de Vega</a>
+        </div>
+      </div>
+      <a class="pensum-link" href="https://www.nb.no/items/10f4c1c0b527d69dd1915e803ee512aa" target="_blank">Pensumbok · side 90–129 ↗</a>
+      <div style="border-top: 1px solid var(--border2); margin: 1.2rem 0;"></div>
+      <div class="divider-label">Shakespeare i dybden</div>
+      <div class="row">
+        <div class="row-label">Nøkkelpunkter</div>
+        <div class="row-content">
+          <ul class="bullets">
+            <li>Skrev Hamlet, Macbeth og Romeo og Julie</li>
+            <li>Utviklet det engelske språket og mestret både blankvers og komplekse karakterportretter</li>
+            <li>Sentral i den engelske renessansen — hans verker er verdens mest spilte dramatikk</li>
+            <li>Spilte på The Globe (utendørs) og Blackfriars Theatre (innendørs, vinterstid)</li>
+            <li>Var deleier i The Globe Theatre og Blackfriars Theatre</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Hvem</div>
+        <div class="row-content">William Shakespeare (1564–1616). Skuespiller, dramatiker og medeier av Globe Theatre i London. Skrev 37 stykker — tragedier, komedier og historiske dramaer — samt sonetter og dikt.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Språk</div>
+        <div class="row-content">Skrev på tidlig moderne engelsk. Blander prosa og vers — adelige snakker gjerne i jambisk pentameter (ti stavelser, ujamn-jamn-rytme), tjenere i prosa. Rytmen er ikke bare estetisk — den bærer mening og tempo.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Sjangre</div>
+        <div class="row-content"><strong>Tragedier</strong> (Hamlet, Macbeth, Othello, Kong Lear) — følger aristotelisk form med hamartia og katarsis. <strong>Komedier</strong> (En midtsommernattsdrøm, Som du vil det, Mye støy for ingenting) — forviklinger, forkledning og lykkelig slutt. <strong>Historiske dramaer</strong> (Henrik V, Richard III) — engelske konger som moralske og politiske speil.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Scenen</div>
+        <div class="row-content">Globe Theatre: åpen scene som stakk ut i publikum på tre sider. Ingen kulisser — stedet etableres gjennom teksten. Ingen lys bortsett fra dagslys. Alle roller spilt av menn. Publikum fra alle samfunnslag stod eller satt rundt scenen. Shakespeare var også medeier i Blackfriars Theatre — et innendørs, overbygget teater som tillot kveldsforestillinger med kunstig belysning og et mer velstående publikum.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Kulturell arv</div>
+        <div class="row-content">Siden 1700-tallet har Shakespeares stykker vært et fast referansepunkt for allusjoner i vestlig kunst og kultur — i litteratur, opera, film, musikk og populærkultur. Å kjenne Shakespeare er å kjenne et felles europeisk referansebibliotek.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Hvorfor viktig</div>
+        <div class="row-content">Shakespeare er den mest oppførte dramatikeren i verden. Hans stykker utforsker makt, kjærlighet, sjalusi, forræderi og identitet med en psykologisk dybde som holder seg. Han er også referansepunktet for nesten all vestlig dramaturgisk teori etter 1600.</div>
+      </div>
+      <a class="pensum-link" href="https://www.nb.no/items/10f4c1c0b527d69dd1915e803ee512aa" target="_blank">Pensumbok · side 90–129 ↗</a>
+      <a class="pensum-link" href="https://teateriperspektiv2.wordpress.com/2015/01/31/the-collected-powerpoints-on-shakespeare/" target="_blank">Fordypning: Shakespeare — presentasjoner og materiale ↗</a>
+      <div class="epoch-close" onclick="toggleEpoch('ep-renes')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <!-- KLASSISISMEN -->
+  <div class="epoch" id="ep-barokk">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Klassisismen og Restoration</div>
+        <div class="epoch-years">ca. 1600–1725</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-barokk')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <div class="row">
+        <div class="row-label">Samfunn</div>
+        <div class="row-content">Absolutistiske monarker. Hoffteater. Opera utvikles i Italia. Ingen teater i England 1642–1660.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">Makt og prestisje. Strenge estetiske regler (de tre enheter). Fransk klassisisme (reglene nedskrevet i 1674). Englands «Restoration» 1660.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Materiell</div>
+        <div class="row-content">Lukket scenerom med kulissescenografi. Profesjonelle skuespillerinner for første gang i Europa. Deklamatorisk spillestil.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Dramatikere</div>
+        <div class="row-content">
+          Racine · Corneille ·
+          <a class="name-pill" href="teaterfornyere.html#moliere">Molière</a>
+        </div>
+      </div>
+      <a class="pensum-link" href="https://www.nb.no/items/10f4c1c0b527d69dd1915e803ee512aa" target="_blank">Pensumbok · side 136–156 ↗</a>
+      <div class="epoch-close" onclick="toggleEpoch('ep-barokk')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <!-- OPPLYSNINGSTIDEN -->
+  <div class="epoch" id="ep-opplysning">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Opplysningstiden</div>
+        <div class="epoch-years">ca. 1700–1800</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-opplysning')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <div class="row">
+        <div class="row-label">Samfunn</div>
+        <div class="row-content">Fornuft og vitenskap utfordrer religion og tradisjon. England, Frankrike, Tyskland og Norden.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">Opplysning, moral og samfunnskritikk. Borgerskapets teater vokser frem.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Materiell</div>
+        <div class="row-content">Borgerlig drama, sentimentalt drama. Løsning fra klassisismens strenge regler.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Dramatikere</div>
+        <div class="row-content">Voltaire · Lessing · <a href="#ep-norsk">Ludvig Holberg — se Norsk teaterhistorie ↓</a></div>
+      </div>
+
+      <a class="pensum-link" href="https://www.nb.no/items/10f4c1c0b527d69dd1915e803ee512aa" target="_blank">Pensumbok · side 161–191 ↗</a>
+      <div class="epoch-close" onclick="toggleEpoch('ep-opplysning')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <!-- ROMANTIKKEN -->
+  <div class="epoch" id="ep-romantikk">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Romantikken</div>
+        <div class="epoch-years">ca. 1815–1850</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-romantikk')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <div class="row">
+        <div class="row-label">Samfunn</div>
+        <div class="row-content">Reaksjon mot opplysningstidens fornuftsideal. Følelser, natur og nasjonalisme i sentrum. England, Frankrike, Tyskland, Norge.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">Uttrykke individets indre liv og nasjonale identitet.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Materiell</div>
+        <div class="row-content">Melodrama, historiske skuespill, spektakulær scenografi.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Dramatikere</div>
+        <div class="row-content">
+          <a class="name-pill" href="teaterfornyere.html#schiller">Schiller</a>
+          · Hugo · Büchner
+        </div>
+      </div>
+      <a class="pensum-link" href="https://www.nb.no/items/10f4c1c0b527d69dd1915e803ee512aa" target="_blank">Pensumbok · side 194–213 ↗</a>
+      <div class="epoch-close" onclick="toggleEpoch('ep-romantikk')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <!-- 1800-TALLET / REALISME -->
+  <div class="epoch" id="ep-realisme">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">1800-tallet og realismen</div>
+        <div class="epoch-years">ca. 1850–1900</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-realisme')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <div class="row">
+        <div class="row-label">Samfunn</div>
+        <div class="row-content">Industrialisering. Fremvekst av middelklassen. Nasjonalisme. Darwin og vitenskapelig tenkemåte.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">Speile virkeligheten. Samfunnskritikk. Teateret som moralsk og sosial arena.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Materiell</div>
+        <div class="row-content">Fjerde vegg-illusjonen. Naturalistiske scenografi. Prosa i stedet for vers. Psykologisk dybde i karakter.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Dramatikere</div>
+        <div class="row-content">
+          <a class="name-pill" href="teaterfornyere.html#ibsen">Ibsen</a>
+          <a class="name-pill" href="teaterfornyere.html#strindberg">Strindberg</a>
+          <a class="name-pill" href="teaterfornyere.html#tsjehov">Tsjehov</a>
+        </div>
+      </div>
+      <a class="pensum-link" href="https://www.nb.no/items/10f4c1c0b527d69dd1915e803ee512aa" target="_blank">Pensumbok · side 215–242 ↗</a>
+      <div class="epoch-close" onclick="toggleEpoch('ep-realisme')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <div class="divider-label mt">Etter 1875 — se også Teaterfornyere</div>
+  <a class="pensum-link" href="https://www.nb.no/items/c5ace0d18ee0fdfee250f8c6eb7d0b1c" target="_blank">Pensumbok · Etter 1875 ↗</a>
+  <p style="font-size:13px; color:var(--text3); padding: 0.5rem 0 1rem;">
+    Modernismen, eksperimentet og samtiden er også organisert etter nøkkelpersoner.
+    <a href="teaterfornyere.html" style="color:var(--text3); text-decoration:underline; text-underline-offset:2px;">→ Gå til Teaterfornyere</a>
+  </p>
+
+  <!-- FIN DE SIÈCLE -->
+  <div class="epoch" id="ep-findesiecle">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Fin de Siècle og tidlig modernisme</div>
+        <div class="epoch-years">1880–1914</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-findesiecle')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <p style="font-size:13px; color:var(--text2); line-height:1.6; margin-bottom:0.8rem;">Overgangen fra 1800-tallets melodrama til en søken etter indre sannhet.</p>
+      <div class="row">
+        <div class="row-label">Samfunn</div>
+        <div class="row-content">Industrialisering, urbanisering og politisk uro. Vitenskapelig tenkemåte utfordrer tradisjonelle verdier.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">
+          <ul class="bullets">
+            <li><strong>Naturalisme og realisme</strong> — Ibsen og Strindberg brakte ekte samfunnsproblemer (arv, kjønn, klasse) inn på scenen. Teateret som laboratorium for menneskelig atferd.</li>
+            <li><strong>Symbolisme</strong> — Reaksjon mot realismen. Drømmeaktige bilder og symboler for å fange det uutsigelige og sjelelige.</li>
+            <li><strong>Regissørens fremvekst</strong> — Teateret som helhetlig kunstverk (Gesamtkunstverk) kontrollert av en visjonær regissør.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Dramatikere</div>
+        <div class="row-content">
+          <a class="name-pill" href="teaterfornyere.html#ibsen">Ibsen</a>
+          <a class="name-pill" href="teaterfornyere.html#strindberg">Strindberg</a>
+          <a class="name-pill" href="teaterfornyere.html#tsjehov">Tsjehov</a>
+          <a class="name-pill" href="teaterfornyere.html#wilde">Wilde</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Fornyere</div>
+        <div class="row-content">
+          <a class="name-pill" href="teaterfornyere.html#wagner">Wagner</a>
+          <a class="name-pill" href="teaterfornyere.html#reinhardt">Reinhardt</a>
+          <a class="name-pill" href="teaterfornyere.html#antoine">Antoine</a>
+          <a class="name-pill" href="teaterfornyere.html#saxemeiningen">Saxe-Meiningen</a>
+        </div>
+      </div>
+      <div class="epoch-close" onclick="toggleEpoch('ep-findesiecle')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <!-- ISMENE -->
+  <div class="epoch" id="ep-ismer">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Ismene i teateret</div>
+        <div class="epoch-years">ca. 1880–1940</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-ismer')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <p style="font-size:13px; color:var(--text2); line-height:1.6; margin-bottom:0.8rem;">Kunstneriske bevegelser som brøt med realismen og utforsket nye uttrykksformer.</p>
+      <div class="row">
+        <div class="row-label">Symbolisme</div>
+        <div class="row-content">Reaksjon mot realismens ytre virkelighet. Drøm, myte og det indre sjelsliv i sentrum. Diffus belysning, symbolske bilder. Maeterlinck er sentral.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Ekspresjonisme</div>
+        <div class="row-content">Forvridde, subjektive følelsesuttrykk. Scenebildet speiler karakterens indre verden fremfor den ytre virkeligheten. Sterk i tysk teater 1910–1925.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Futurisme</div>
+        <div class="row-content">Italiensk bevegelse (Marinetti, ca. 1909). Hyllet maskin, fart og brudd med fortiden. Korte, provokative sceniske øyeblikk — tidlig performance-kunst.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Dadaisme</div>
+        <div class="row-content">Anti-kunst og anti-logikk. Oppsto i Zürich 1916 som reaksjon på krigens galskap. Tristan Tzara sentral. Absurde tekster og happenings.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Konstruktivisme</div>
+        <div class="row-content">Russisk bevegelse. Meyerhold brukte maskinkonstruksjoner som scenografi og biomekaonikk som skuespillerteknikk. Teateret som politisk fabrikk.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Surrealisme</div>
+        <div class="row-content">Drøm og det ubevisste som kilde til kunstnerisk sannhet (Breton, 1924). Påvirket Artaud sterkt — grusomhetens teater har surrealistiske røtter.</div>
+      </div>
+      <div class="epoch-close" onclick="toggleEpoch('ep-ismer')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <!-- MODERNISMEN -->
+  <div class="epoch" id="ep-modernisme">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Modernismen frem til etterkrigstiden</div>
+        <div class="epoch-years">1914–1945</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-modernisme')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <p style="font-size:13px; color:var(--text2); line-height:1.6; margin-bottom:0.8rem;">Mellomkrigstiden brukte teateret som et verktøy for radikal samfunnsendring og som svar på krigens traumer.</p>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">
+          <ul class="bullets">
+            <li><strong>Episk teater</strong> — Brecht utviklet Verfremdungseffekt (fremmedgjøring) for å få publikum til å tenke kritisk fremfor å leve seg inn i følelsene.</li>
+            <li><strong>Grusomhetens teater</strong> — Artaud ønsket å knuse publikums selvtilfredshet gjennom et voldsomt, sanselig og rituelt teaterspråk.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Fornyere</div>
+        <div class="row-content">
+          <a class="name-pill" href="teaterfornyere.html#brecht">Brecht</a>
+          <a class="name-pill" href="teaterfornyere.html#artaud">Artaud</a>
+          <a class="name-pill" href="teaterfornyere.html#meyerhold">Meyerhold</a>
+          <a class="name-pill" href="teaterfornyere.html#piscator">Piscator</a>
+        </div>
+      </div>
+      <div class="epoch-close" onclick="toggleEpoch('ep-modernisme')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <!-- ETTERKRIGSTIDEN -->
+  <div class="epoch" id="ep-etterkrig">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Etterkrigstiden og postmodernismen</div>
+        <div class="epoch-years">1945–i dag</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-etterkrig')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <p style="font-size:13px; color:var(--text2); line-height:1.6; margin-bottom:0.8rem;">Teateret dekonstruerte «de store fortellingene» og beveget seg fra leting etter sannhet til en lek med ulike perspektiver.</p>
+      <div class="row">
+        <div class="row-label">Formål</div>
+        <div class="row-content">
+          <ul class="bullets">
+            <li><strong>Det absurde teater</strong> — Beckett og Ionesco fremstilte mennesket som fanget i en meningsløs eksistens der språket ofte bryter sammen. I motsetning til modernismens «ismer» var ikke absurdisme en organisert bevegelse eller et manifest — begrepet ble først tatt i bruk av kritikeren Martin Esslin i 1961/62, da han samlet en rekke etterkrigsdramatikere under én beskrivelse i boken <em>Theatre of the Absurd</em>.</li>
+            <li><strong>Fysisk og eksperimentelt teater</strong> — Grotowski og «det fattige teateret» strippet bort alt overflødig for å fokusere på relasjonen mellom skuespiller og tilskuer.</li>
+            <li><strong>Postmodernisme</strong> — Fra 1980-tallet blander teateret sjangre, bruker ny teknologi og forkaster lineær handling til fordel for visuell «kollasj».</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Fornyere</div>
+        <div class="row-content">
+          <a class="name-pill" href="teaterfornyere.html#grotowski">Grotowski</a>
+          <a class="name-pill" href="teaterfornyere.html#brook">Brook</a>
+          <a class="name-pill" href="teaterfornyere.html#beckett">Beckett</a>
+          <a class="name-pill" href="teaterfornyere.html#ionesco">Ionesco</a>
+        </div>
+      </div>
+      <div class="epoch-close" onclick="toggleEpoch('ep-etterkrig')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <div class="epoch" id="ep-nyavant">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">New York Avant-Garde · 1958–1980</div>
+        <div class="epoch-years">Off-Off-Broadway</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-nyavant')">Vis</button>
+    </div>
+    <div class="epoch-body">
+      <div class="row">
+        <div class="row-label">Kontekst</div>
+        <div class="row-content">Mens Off-Broadway på 1960-tallet ble stadig mer kommersiell, vokste det frem et nytt lag under: Off-Off-Broadway. Startstedet var kafeer, kirker og kunstgallerier i Greenwich Village og East Village — steder som ikke trengte teaterlisens og ikke brydde seg om anmeldelser. Kunstnerne betalte ikke og ble ikke betalt. Teateret var et eksperiment, ikke et produkt.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Caffe Cino · 1958</div>
+        <div class="row-content">Joe Cino åpnet et kafékjeller på Cornelia Street i Greenwich Village — ikke som teater, men som møtested. Teater oppsto av seg selv. Ingen budsjett, ingen sensur, ingen mal. LHBT-stemmer fikk plass da de ikke hadde andre scener. Regnes som Off-Off-Broadways fødested. Se <a href="teaterfornyere.html#offoffbroadway">Teaterfornyere</a>.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">La MaMa · 1961</div>
+        <div class="row-content">Ellen Stewart grunnla La MaMa Experimental Theatre Club i East Village. Satte opp flere forestillinger på ett år enn hele Broadway. Åpen for alle — ingen mal for «kvalitet». Fremdeles aktiv. Se <a href="teaterfornyere.html#offoffbroadway">Teaterfornyere</a>.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">The Living Theatre · 1946</div>
+        <div class="row-content">Judith Malina og Julian Beck. Politisk, anarkistisk og kroppslig — ville skape «a Beautiful Non-Violent Anarchist Revolution». Inspirert av Artaud. «Paradise Now!» inviterte publikum opp på scenen. Se <a href="teaterfornyere.html#malina">Teaterfornyere</a>.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">The Open Theater · 1963</div>
+        <div class="row-content">Joseph Chaikin grunnla The Open Theater sammen med Megan Terry og Jean-Claude van Itallie. Ville frigjøre skuespilleren fra Method Acting — fokus på ensemble, lyd og bevegelse, og improvisasjon. Inviterte publikum til å vitne prosessen. Se <a href="teaterfornyere.html#offoffbroadway">Teaterfornyere</a>.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">The Performance Group · 1967</div>
+        <div class="row-content">Richard Schechner grunnla The Performance Group — utgangspunktet for Environmental Theater og Performance Studies. Se <a href="teaterfornyere.html#schechner">Teaterfornyere</a>.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">The Wooster Group · 1980</div>
+        <div class="row-content">Elizabeth LeCompte tok over The Performance Group og omdøpte det til The Wooster Group — ett av verdens mest innflytelsesrike eksperimentelle ensembler. Se <a href="teaterfornyere.html#lecompte">Teaterfornyere</a>.</div>
+      </div>
+      <div class="epoch-close" onclick="toggleEpoch('ep-nyavant')">Lukk ↑</div>
+    </div>
+  </div>
+
+  <div class="epoch" id="ep-norsk">
+    <div class="epoch-header">
+      <div>
+        <div class="epoch-name">Norsk teaterhistorie · 1684–i dag</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleEpoch('ep-norsk')">Vis</button>
+    </div>
+    <div class="epoch-body">
+
+      <div class="divider-label">Holberg (1684–1754)</div>
+      <div class="row">
+        <div class="row-label">Hvem</div>
+        <div class="row-content">Ludvig Holberg — norsk/dansk forfatter og historiker, levde det meste av livet i Danmark. Regnes som nordisk teaters far.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Verk</div>
+        <div class="row-content">33 komedier på seks år, inspirert av Molière og commedia dell'arte. Karaktertyper, ikke psykologiske individer — satire over borgerskapet. Kjente stykker: <em>Jeppe paa Bierget</em>, <em>Den Politiske Kandstøber</em>, <em>Den Stundesløse</em>, <em>Erasmus Montanus</em>.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Ressurser</div>
+        <div class="row-content">
+          <ul class="bullets">
+            <li><a href="https://snl.no/Ludvig_Holberg" target="_blank">SNL: Ludvig Holberg ↗</a></li>
+            <li><a href="https://tv.nrk.no/serie/fjernsynsteatret/sesong/1964/episode/FTEA64001064" target="_blank">NRK Fjernsynsteatret — Holberg (1964) ↗</a></li>
+            <li><a href="https://tv.nrk.no/serie/fjernsynsteatret/sesong/1984/episode/FTEA00002784" target="_blank">NRK Fjernsynsteatret — Holberg (1984) ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border2); margin: 1.2rem 0;"></div>
+      <div class="divider-label">De faste scenene (1827–1913)</div>
+      <div class="row">
+        <div class="row-label">Christiania Theater</div>
+        <div class="row-content">Norges første faste offentlige scene, åpnet 1827 i Christiania (Oslo). Satte standarden for norsk institusjonsteater.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Den Nationale Scene</div>
+        <div class="row-content">Grunnlagt i Bergen 1876. Ibsen var sceneinstruktør her tidlig i karrieren. Fremdeles aktiv.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Nationaltheatret</div>
+        <div class="row-content">Åpnet i Oslo 1899 med Ibsen og Bjørnson som grunnpilarene. Fortsatt Norges prestisjetyngste scene.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Det Norske Teatret</div>
+        <div class="row-content">Grunnlagt 1913 av Hulda Garborg — nynorsk scene, og i dag det teatret i verden som setter opp flest forestillinger på nynorsk.</div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border2); margin: 1.2rem 0;"></div>
+      <div class="divider-label">Ibsen og Bjørnson</div>
+      <div class="row">
+        <div class="row-label">Henrik Ibsen</div>
+        <div class="row-content">Skapte det psykologiske borgerlige dramaet — <em>Et dukkehjem</em>, <em>Hedda Gabler</em>, <em>Vildanden</em>. Var internasjonalt berømt i sin levetid og regnes som grunnleggeren av det moderne drama. Hans stykker spilles fortsatt over hele verden.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Bjørnstjerne Bjørnson</div>
+        <div class="row-content">Like dominerende som Ibsen i sin tid, men langt mer glemt internasjonalt i dag. Gikk fra nasjonalromantisk bondedrama til samfunnskritisk realisme. Mottok Nobelprisen i litteratur i 1903 — den første nordmann.</div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border2); margin: 1.2rem 0;"></div>
+      <div class="divider-label">Friteaterbevegelsen (1970-tallet)</div>
+      <div class="row">
+        <div class="row-label">Bakgrunn</div>
+        <div class="row-content">Opprør mot de etablerte institusjonsteatrene — politisk, eksperimentelt og desentralisert. Inspirert av Brecht, Boal og internasjonale frigrupper. Åpnet teater for nye stemmer, nye rom og nye publikumsgrupper. La grunnlaget for det norske fri-scenefeltet.</div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Tramteatret <span style="font-size:11px; color:var(--text3);">1976–1986 · oppløst</span></div>
+        <div class="row-content">Stiftet i Oslo 1976 av Liv Aakvik. Vedtok å alltid ta de svake og undertryktes parti og nå ut til hele Norges befolkning. Laget politisk musikkrevy med sterk forankring i rockemusikk. Nådde et bredt publikum gjennom NRK-serier og turneer over hele landet. Gjenforeningsturné 2003.</div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Baktruppen <span style="font-size:11px; color:var(--text3);">1986– · oppløst</span></div>
+        <div class="row-content">Norsk performance-kollektiv grunnlagt i Oslo. Blandet teater, performance art og konseptuell kunst. Postdramatisk praksis: ingen fast tekst, ingen fast rolle. Et av Norges mest internasjonalt profilerte eksperimentelle ensembler.</div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border2); margin: 1.2rem 0;"></div>
+      <div class="divider-label">Jon Fosse (1959–)</div>
+      <div class="row">
+        <div class="row-label">Hvem</div>
+        <div class="row-content">Verdens mest oppførte nålevende dramatiker. Skriver på nynorsk. Mottok Nobelprisen i litteratur 2023.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Uttrykk</div>
+        <div class="row-content">Minimalistisk, repetitivt språk med lange pauser — taushet er like viktig som replikk. Tematikk: ensomhet, natur, eksistens og det uutsigelige. Representerer en særnorsk tradisjon der det som ikke sies er det viktigste.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Ressurser</div>
+        <div class="row-content"><a href="https://snl.no/Jon_Fosse" target="_blank">SNL: Jon Fosse ↗</a></div>
+      </div>
+
+      <a class="pensum-link" href="https://snl.no/norsk_teaterhistorie" target="_blank">SNL: Norsk teaterhistorie ↗</a>
+
+      <div class="epoch-close" onclick="toggleEpoch('ep-norsk')">Lukk ↑</div>
+    </div>
+  </div>
+
+
+  <nav class="chapter-nav">
+    <a class="chapter-nav-prev" href="introduksjon.html">← Introduksjon</a>
+    <a class="chapter-nav-next" href="teaterfornyere.html">Teaterfornyere →</a>
+  </nav>
+</div><!-- end .page -->
+
+<footer class="site-footer">
+  © 2026 · Redaktør: <a href="/cdn-cgi/l/email-protection#d2a0b7bcfcb9b3a6bab7a0bbbcb7fca2bda5b7bebe92a1b9bdbeb7fca0bdb5b4b9fcbcbd">Ren Powell</a>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function toggleEpoch(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const btn = el.querySelector('.vis-btn');
+  if (btn) btn.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  document.querySelector('.theme-toggle').textContent = next === 'dark' ? '☽' : '☀︎';
+  localStorage.setItem('theme', next);
+}
+
+const saved = localStorage.getItem('theme');
+if (saved) {
+  document.documentElement.setAttribute('data-theme', saved);
+  if (saved === 'dark') document.querySelector('.theme-toggle').textContent = '☽';
+}
+</script>
+
+<style>
+/* ── TYPOGRAPHY ── */
+.page-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.epoch-name {
+  font-weight: 700;
+}
+
+.row-content, .row-label, .epoch-body p {
+  font-weight: 400;
+}
+
+/* ── CLOSE BUTTON ── */
+.epoch-close {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text3);
+  cursor: pointer;
+  padding: 0.8rem 0 0.2rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--border2);
+  letter-spacing: 0.03em;
+}
+.epoch-close:hover {
+  color: var(--text);
+}
+
+/* ── FOOTER ── */
+.site-footer {
+  font-size: 12px;
+  color: var(--text3);
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  margin-top: 2rem;
+  border-top: 1px soli
+}
+</style>
+</body>
+</html>
