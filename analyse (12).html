@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyse — Teaterfag kompendium</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="vg-filter.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-home" href="index.html">← Kompendium</a>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <span class="nav-title">Analyse</span>
+      <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Bytt fargemodus">☀︎</button>
+      <a href="sok.html" class="search-link" aria-label="Søk">⌕ Søk</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+  <p class="chapter-number" style="margin-bottom:0.2rem;">04</p>
+  <h1 class="page-title">ANALYSE</h1>
+  <p class="page-sub">Verktøy for å lese og analysere teatrale ytringer.</p>
+
+  <!-- ABSTRAKT OG REPRESENTASJON -->
+  <div class="tmat-section vg2" id="tm-abstrakt">
+    <div class="tmat-header" onclick="toggleTmat('tm-abstrakt')">
+      <span class="tmat-title">Abstrakt, representasjon og kontinuumet</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>I billedkunst finnes to hovedretninger: representasjonell kunst (gjenkjennelig, etterligner virkeligheten) og ikke-representasjonell kunst (former, farger, følelser uten gjenkjennelige motiver). Aristoteles skrev om <em>mimesis</em> — en form for representasjon.</p>
+      <p>Å abstrahere betyr å ta vekk detaljer. Det finnes et kontinuum fra det naturalistiske til det nesten ikke-gjenkjennelige. Abstrakt kunst er alltid forbundet med noe visuelt fra den virkelige verden — men i sterk grad bearbeidet.</p>
+      <p>I teateret: en stereotype («skurken», «heksen») er en liten grad av abstrahering. Naturalisme forsøker å ligge på den ene enden av kontinuumet. Artauds grusomhetsteater og dadaismen befinner seg på den andre.</p>
+      <div class="kontinuum-wrap">
+        <p class="kontinuum-note">← Bla sideveis →</p>
+        <div style="overflow-x:auto; -webkit-overflow-scrolling:touch;">
+        <img class="kontinuum-img" src="https://teateriperspektiv2.wordpress.com/wp-content/uploads/2026/04/abstrahering.jpg" alt="Abstraherings-kontinuum" style="height:300px; width:auto; max-width:none; cursor:zoom-in;" onclick="document.getElementById('img-lightbox').style.display='flex'" title="Klikk for å forstørre">
+        </div>
+        <p style="font-size:11px; color:var(--text3); margin-top:0.2rem;">Klikk for å forstørre</p>
+
+        <!-- LIGHTBOX -->
+        <div id="img-lightbox" onclick="this.style.display='none'" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; align-items:center; justify-content:center; cursor:zoom-out;">
+          <img src="https://teateriperspektiv2.wordpress.com/wp-content/uploads/2026/04/abstrahering.jpg" alt="Abstraherings-kontinuum" style="max-width:95vw; max-height:95vh; object-fit:contain; border-radius:4px;">
+        </div>
+      </div>
+      <p class="tmat-source">Kilde: Lumin. <em>Introduction to Art Concepts</em>.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-abstrakt')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- SEMIOTIKK -->
+  <div class="tmat-section vg3" id="tm-semiotikk">
+    <div class="tmat-header" onclick="toggleTmat('tm-semiotikk')">
+      <span class="tmat-title">Semiotikk — tegn og koder i teateret</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>Semiotikk er læren om tegn og betydning. I teateret kommuniserer alt — ikke bare teksten. Hvert element på scenen er et potensielt tegn som publikum tolker.</p>
+      <div class="row" style="margin-top:0.8rem;">
+        <div class="row-label">Hva er et tegn?</div>
+        <div class="row-content">Et tegn er noe som betyr noe annet enn seg selv. En rød kjole på scenen er ikke bare en kjole — den kan bety lidenskap, fare, makt eller blod, avhengig av kontekst. Publikum tolker kontinuerlig alle sceniske elementer som potensielle tegn.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Ikoniske tegn</div>
+        <div class="row-content">Ligner det de representerer. Et bord på scenen representerer et bord. Et foto av en person representerer den personen. Naturalistisk scenografi er full av ikoniske tegn.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Indeksikale tegn</div>
+        <div class="row-content">Peker på noe uten å ligne det. Røyk indikerer ild. En tom stol indikerer fravær. Stillhet kan indikere spenning eller død. Mange av de sterkeste teatrale virkemidlene er indeksikale.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Symbolske tegn</div>
+        <div class="row-content">Konvensjonelle tegn der forbindelsen er kulturelt bestemt — ikke naturlig. Et flagg symboliserer en nasjon. Svart symboliserer sorg i vestlig kultur, hvitt i mange asiatiske kulturer. Symbolske tegn forutsetter felles kulturell kode mellom scene og publikum.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Koder</div>
+        <div class="row-content">Tegn virker innenfor koder — systemer av konvensjoner publikum kjenner. Teaterkoder inkluderer: belysning (spot = fokus), musikk (dur = glede, moll = sorg), kostyme (frakk = autoritet). Regissøren kan bekrefte eller bryte kodene bevisst.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">I analysen</div>
+        <div class="row-content">I analysen undersøker vi: hva er tegnet, hva refererer det til, og hvilken kode aktiverer det. Er det ikonisk, indeksikal eller symbolsk? Og er bruken konsistent eller ironisk — bekrefter det helheten, eller bryter det med den?</div>
+      </div>
+      <p class="tmat-source">Elam, K. (1980). <em>The Semiotics of Theatre and Drama</em>. Methuen. · Eigtved, M. (2007). <em>Forestillingsanalyse</em>. Forlaget Samfundslitteratur.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-semiotikk')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- FORESTILLINGSANALYSE -->
+  <div class="tmat-section vg2" id="tm-teatral">
+    <div class="tmat-header" onclick="toggleTmat('tm-teatral')">
+      <span class="tmat-title">Forestillingsanalyse</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>Teatral beskriver en begivenhet der noe eller noen settes i fokus — adskilt fra hverdagen og rammet inn slik at det krever oppmerksomhet. Noen defineres som utøver, andre som tilskuer. Det kan skje på en scene, men trenger ikke det.</p>
+      <p style="margin-top:0.5rem; font-size:13px; color:var(--text3);">Se også: Iscenesettelse av selvet og Performance som kunstform.</p>
+      <p>En teateranalyse begynner med en <strong>hypotese</strong>. Det er mulig å peke på referanser til tradisjoner, men fokus i analysen er forestillingen selv — i sin spesifikke kontekst — og den opplevelsen den gir publikum.</p>
+      <p>Når vi analyserer en teatral begivenhet skal vi være mer fokuserte på det vi opplever enn på hvordan forestillingen ble til — arbeidsmetoder eller regissørens intensjoner er ikke det sentrale. Formålet er heller ikke å vurdere om forestillingen var bra eller dårlig.</p>
+      <p>Formålet med analysen er å fokusere på hva publikum kan få ut av å overvære en bestemt begivenhet: hvilke elementer som spiller sammen og på hvilken måte, hvordan dette kan settes i sammenheng med verden vi lever i dag, og hvordan det kan plasseres i en historisk forståelsesramme.</p>
+      <p>En teateranalyse er subjektiv, men kan allikevel sammenlignes med en vitenskapelig metode:</p>
+      <div class="analyse-grid">
+        <div class="analyse-col">
+          <div class="analyse-head">Vitenskap</div>
+          <ul class="bullets">
+            <li>Utforme en hypotese</li>
+            <li>Tilegne seg reelle erfaringer (empiri)</li>
+            <li>Drøfte årsaksforklaring</li>
+            <li>Tolkning</li>
+          </ul>
+        </div>
+        <div class="analyse-col">
+          <div class="analyse-head">Forestillingsanalyse</div>
+          <ul class="bullets">
+            <li>Definere analytiske spørsmål / spesifikk interesse</li>
+            <li>Opplevelse / erindring</li>
+            <li>Samspillet i opplevelsen</li>
+            <li>Kontekstualisering</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:0.8rem;">NB: Se og ta i bruk <strong>Patrice Pavis sitt spørsmålsskjema</strong> som veiledning i analysen.</p>
+      <a class="wakelet-link" href="https://teateriperspektiv2.wordpress.com/wp-content/uploads/2024/02/39e80-dokument.pdf" target="_blank">→ Pavis spørsmålsskjema (PDF) ↗</a>
+      <a class="wakelet-link" href="pavis-skjema.pdf" target="_blank">→ Last ned skjema (PDF) ↗</a>
+      <p class="tmat-source">Kilde: Eigtved, M. (2007). <em>Forestillingsanalyse: en introduktion</em>. Forlaget Samfundslitteratur.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-teatral')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- TEKSTANALYSE -->
+  <div class="tmat-section vg2" id="tm-tekst">
+    <div class="tmat-header" onclick="toggleTmat('tm-tekst')">
+      <span class="tmat-title">Å lese en dramatisk tekst</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>En dramatisk tekst er ikke litteratur — den er en plan for noe som skal skje i rom og tid. Spørsmålene nedenfor er ikke litterære, men teatrale: hva krever denne teksten av scenen?</p>
+      <div class="tekst-item">
+        <p class="tekst-label">Dramaturgisk struktur</p>
+        <p>Hvilken dramaturgisk form har teksten? Hvor ligger spenningen, og hva utløser den? Er det en løsning, eller lar teksten spørsmålene stå åpne? Se <a href="dramaturgi.html">Dramaturgi</a>.</p>
+      </div>
+      <div class="tekst-item">
+        <p class="tekst-label">Tid, sted og rom</p>
+        <p>Hva forteller teksten om hvor og når handlingen foregår? Hva er presist angitt, og hva er overlatt til regissøren? Hvilke muligheter åpner rommet for?</p>
+      </div>
+      <div class="tekst-item">
+        <p class="tekst-label">Figurer og relasjoner</p>
+        <p>Hvem driver handlingen fremover, og hvem motsetter seg den? Hva er maktrelasjonene mellom figurene? Hvordan endrer relasjonene seg i løpet av teksten?</p>
+      </div>
+      <div class="tekst-item">
+        <p class="tekst-label">Språk og tone</p>
+        <p>Er språket poetisk, naturalistisk eller fragmentert? Hva sier tempoet og rytmen i replikkvekslingen om stemningen og forholdet mellom figurene?</p>
+      </div>
+      <div class="tekst-item">
+        <p class="tekst-label">Sceneanvisninger</p>
+        <p>Hva forteller sceneanvisningene deg, og hva overlater de åpent? Noen dramatikere (Beckett, Fosse) skriver sceneanvisninger som er en del av selve det dramatiske språket — ikke praktiske instruksjoner, men poetiske eller rytmiske elementer som er like viktige som replikken.</p>
+      </div>
+      <div class="tekst-item">
+        <p class="tekst-label">Åpne spørsmål</p>
+        <p>Hva svarer teksten <em>ikke</em> på? Dette er regissørens inngangspunkter — stedene der tolkningsarbeidet begynner.</p>
+      </div>
+      <div class="tmat-close" onclick="toggleTmat('tm-tekst')">Skjul ↑</div>
+    </div>
+  </div>
+  <!-- FORESTILLINGSANALYSE: DYPERE BLIKK (VG3) -->
+  <div class="tmat-section vg3" id="tm-analyse-vg3">
+    <div class="tmat-header" onclick="toggleTmat('tm-analyse-vg3')">
+      <span class="tmat-title">Forestillingsanalyse — et bredere blikk</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p style="margin-bottom:0.8rem;">Pavis-skjemaet gir deg strukturen. Men bak hvert spørsmål ligger mer. Her er fire innganger som kan hjelpe deg å se bredere i analysen.</p>
+
+      <div class="row">
+        <div class="row-label">Rom og romlige relasjoner</div>
+        <div class="row-content">Rommet er aldri nøytralt. Hvem er i sentrum og hvem er i periferien? Hva sier avstanden mellom kropper om makt og relasjon? Hvordan endrer rommet seg gjennom forestillingen — og hva betyr det når det gjør det? Se også <a href="dramaturgi.html#tm-sjanger">Teatermodell</a> i Dramaturgi.</div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Kropp og bevegelse som tegn</div>
+        <div class="row-content">Kroppen kommuniserer uavhengig av teksten. Tempo, kvalitet, vekt og retning i bevegelsen bærer mening. En karakter som beveger seg sakte og tungt kommuniserer noe annet enn en som beveger seg raskt og lett — selv om replikkene er identiske. Se <a href="analyse.html#tm-semiotikk">Semiotikk</a> og <a href="bevegelse.html">Kropp, stemme og bevegelse</a>.</div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Lys, lyd og musikk</div>
+        <div class="row-content">Disse elementene er ikke pynt — de er dramaturgiske verktøy. Lys definerer fokus, tid og stemning. Lyd og musikk kan bekrefte eller underminere det vi ser. Spør: hva ville skjedd om lydsporet var byttet ut? Hva forteller lyset som teksten ikke sier?</div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Publikums rolle</div>
+        <div class="row-content">Publikum er ikke passive mottakere — de er en del av begivenheten. Hva inviterer forestillingen publikum til å gjøre, føle eller tenke? Og hva skjer i rommet mellom scene og sal — den energien som bare finnes i det levende møtet?</div>
+      </div>
+
+      <p class="tmat-source" style="margin-top:0.8rem;">Eigtved, M. (2007). <em>Forestillingsanalyse: en introduktion</em>. Forlaget Samfundslitteratur. · Elam, K. (1980). <em>The Semiotics of Theatre and Drama</em>. Methuen.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-analyse-vg3')">Skjul ↑</div>
+    </div>
+  </div>
+
+
+
+  <nav class="chapter-nav">
+    <a class="chapter-nav-prev" href="dramaturgi.html">← Dramaturgi</a>
+    <a class="chapter-nav-next" href="produksjon.html">Produksjon →</a>
+  </nav>
+</div><!-- end .page -->
+
+<footer class="site-footer">
+  © 2026 · Redaktør: <a href="https://teateriperspektiv2.wordpress.com/contact/" target="_blank">Ren Powell</a>
+</footer>
+
+<script>
+function toggleTmat(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const btn = el.querySelector('.tmat-header .vis-btn');
+  if (btn) btn.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  document.querySelector('.theme-toggle').textContent = next === 'dark' ? '☽' : '☀︎';
+  localStorage.setItem('theme', next);
+}
+
+const saved = localStorage.getItem('theme');
+if (saved) {
+  document.documentElement.setAttribute('data-theme', saved);
+  if (saved === 'dark') document.querySelector('.theme-toggle').textContent = '☽';
+}
+</script>
+
+<style>
+.tekst-item {
+  padding: 0.8rem 0 0.6rem;
+  border-bottom: 1px solid var(--border2);
+}
+
+.tekst-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.tekst-item p:last-child {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dramt-note-box {
+  background: var(--border2);
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  margin: 0.2rem 0;
+}
+
+.dramt-note-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text2);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.dramt-note-text {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.analyse-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0.8rem 0;
+}
+
+.analyse-col {
+  background: var(--border2);
+  border-radius: 4px;
+  padding: 0.8rem;
+}
+
+.analyse-head {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text2);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.kontinuum-wrap {
+  margin: 0.8rem 0;
+  overflow-x: auto;
+}
+</style>
+</body>
+</html>
