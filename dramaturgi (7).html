@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drama og Dramaturgi — Teaterfag kompendium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-home" href="index.html">← Kompendium</a>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <span class="nav-title">Drama og Dramaturgi</span>
+      <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Bytt fargemodus">☀︎</button>
+      <a href="sok.html" class="search-link" aria-label="Søk">⌕ Søk</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+  <h1 class="page-title">DRAMA OG DRAMATURGI</h1>
+  <p class="page-sub">Fortellingens form og de sceniske valgene.</p>
+
+  <!-- INTRO: DRAMA OG DRAMATURGI -->
+  <div id="tm-drama-intro" style="margin-bottom:1.2rem;">
+    <p>Ordet <em>drama</em> kommer fra det greske <em>dran</em> — å handle, å gjøre. I sin enkleste form er drama det som skjer når noen gjør noe i nærvær av andre som ser på. Det er ikke en tekst, ikke en bygning og ikke et publikum — det er en handling.</p>
+    <p style="margin-top:0.8rem;">Forholdet mellom drama, dramaturgi og teater kan forstås slik:</p>
+    <div class="row" style="margin-top:0.8rem;">
+      <div class="row-label">Drama</div>
+      <div class="row-content">Selve handlingsstrukturen — det som skjer, hvem det skjer med, og i hvilken rekkefølge. Det kan finnes som et skrevet manus, men trenger ikke det. Et improvisert forløp har også en dramatisk struktur.</div>
+    </div>
+    <div class="row">
+      <div class="row-label">Dramaturgi</div>
+      <div class="row-content">Kunsten og håndverket å forme den strukturen bevisst — å ta valg om spenning, rytme, form og fremdrift. Dramaturgien er bindeleddet mellom idéen og forestillingen.</div>
+    </div>
+    <div class="row">
+      <div class="row-label">Teater</div>
+      <div class="row-content">Den levende begivenheten der drama og dramaturgi møter et publikum i tid og rom. Teksten eller planen blir til noe som skjer — én gang, her og nå.</div>
+    </div>
+    <p style="margin-top:0.8rem; font-size:14px; color:var(--text); line-height:1.6;">De tre henger uløselig sammen, men er ikke det samme. En dramatiker arbeider med drama. En dramaturg arbeider med dramaturgien. En regissør arbeider i skjæringspunktet mellom alle tre — og det er det dette kapittelet handler om.</p>
+    <p style="margin-top:0.6rem; font-size:13px;">→ Se <a href="fordypning.html#tm-beg-grunn">Å finne de rette ordene: Drama og teater</a> for definisjoner og distinksjoner.</p>
+  </div>
+
+  <!-- FORMER -->
+  <div style="background:var(--border2); border-radius:6px; padding:0.8rem 1rem; margin-bottom:1rem; font-size:13px; line-height:1.7;">
+    <p><strong>Dramaturgisk modell</strong> (skinnene) — den tekniske planen for fremdriften. Som skinnene på en berg-og-dal-bane bestemmer modellen tempoet på spenningskurven: hvor raskt konflikten eskalerer og hvor vendepunktene kommer.<br> <br> 
+Når vi setter disse modellene (maskineriet) ut i livet på scenen ved hjelp av skuespill, scenografi og lys, skaper vi en dramaturgisk form (opplevelsen):</p>
+    <p style="margin-top:0.5rem;"><strong>Dramaturgisk form</strong> (selve turen) — det helhetlige sceniske uttrykket. Som selve turen er formen den opplevelsen publikum faktisk får. Man kan følge spenningskurven lojalt — eller bryte den, f.eks. ved å senke tempoet helt ned i et klimaks for å skape episk refleksjon.</p>
+  </div>
+
+  <div style="background:var(--border2); border-radius:6px; padding:0.8rem 1rem; margin-bottom:1rem; font-size:13px; line-height:1.7;">
+    <p style="font-weight:700; margin-bottom:0.4rem;">Lukket og åpen dramaturgi <span style="font-weight:400; font-size:11px; color:var(--text3);">Klotz, 1960</span></p>
+    <p><strong>Lukket modell</strong> — en plan der alt henger logisk sammen. Tid, sted og handling er samlet (kausalitet).</p>
+    <p style="margin-top:0.3rem;"><strong>Lukket form</strong> — resultatet føles som en tett, uunngåelig historie.</p>
+    <p style="margin-top:0.5rem;"><strong>Åpen modell</strong> — en plan med hopp i tid og sted. Scenene står mer fritt (episodisk).</p>
+    <p style="margin-top:0.3rem;"><strong>Åpen form</strong> — resultatet føles mangfoldig og gir rom for refleksjon.</p>
+    <p style="margin-top:0.6rem; font-style:italic;">En dyktig regissør kan bruke en lukket modell (en vanlig spenningskurve), men bryte den med episke virkemidler for å skape en åpen form.</p>
+    <p class="dramt-source-inline" style="margin-top:0.4rem;">Klotz, V. (1960). <em>Geschlossene und offene Form im Drama</em>. Hanser.</p>
+  </div>
+
+  <!-- DRAMATURGISKE MODELLER -->
+  <div class="grp-section" id="grp-modeller">
+  <div class="grp-header" onclick="toggleGrp('grp-modeller')">
+    <span class="grp-title">Dramaturgiske modeller</span>
+    <button type="button" class="vis-btn">Vis</button>
+  </div>
+  <div class="grp-body">
+
+  <!-- KLASSISK -->
+  <div class="technique" id="dramt-klassisk">
+    <div class="technique-header">
+      <div class="technique-left">
+        <div class="technique-name">Klassisk (Aristotelisk)</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-klassisk', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">En lineær spenningskurve — ofte også betegnet som <strong>lineær dramaturgi</strong> — som bygger seg opp mot et avgjørende klimaks og en løsning.</p>
+      <div class="diagram-wrap" style="margin-top:0.7rem">
+        <img src="https://teateriperspektiv2.wordpress.com/wp-content/uploads/2024/02/aa1ab-freytag.jpg"
+             alt="Freytags pyramide" class="diagram-img" style="width:300px; max-width:100%">
+        <p class="diagram-caption">Freytags pyramide — Gustav Freytag, <em>Die Technik des Dramas</em>, 1863</p>
+      </div>
+      <p class="dramt-sub-label">Aristoteles' seks elementer <span class="dramt-source">Poetikk, ca. 335 f.Kr.</span></p>
+      <ul class="dramt-list">
+        <li><strong>Handling</strong> (mythos) — plottet; det viktigste elementet</li>
+        <li><strong>Karakter</strong> (ethos) — hvem som handler og hvorfor</li>
+        <li><strong>Tanke</strong> (dianoia) — tema og idé</li>
+        <li><strong>Språk</strong> (lexis) — dialogens og tekstens kvalitet</li>
+        <li><strong>Musikk</strong> (melos) — rytme, sang og lyd</li>
+        <li><strong>Skue</strong> (opsis) — det visuelle; scenografi og kostyme</li>
+      </ul>
+      <div class="tech-close" onclick="toggleTech('dramt-klassisk', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- EPISK -->
+  <div class="technique" id="dramt-episk">
+    <div class="technique-header">
+      <div class="technique-left">
+        <div class="technique-name">Episk (Brechtian)</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-episk', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">En episodisk form utviklet av Bertolt Brecht som bruker avbrytelser for å stanse spenningen og tvinge frem refleksjon. Sentrale teknikker inkluderer montasje og fremmedgjøring (V-effekt). Se <a href="fordypning.html#tm-veffekt">Fordypning: Verfremdungsteknikker</a> for mer.</p>
+      <div class="tech-close" onclick="toggleTech('dramt-episk', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- SIRKULÆR -->
+  <div class="technique" id="dramt-sirk">
+    <div class="technique-header">
+      <div class="technique-left">
+        <div class="technique-name">Sirkulær</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-sirk', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">En struktur basert på gjentakelse, der handlingen vender tilbake til start uten løsning.</p>
+      <p class="dramt-source-inline">NB: «Sirkulær dramaturgi» er et moderne analytisk begrep — ikke en bevisst valgt form i antikken. Men strukturen det beskriver er svært gammel: rituelle praksiser som forutgikk det greske dramaet hadde allerede sirkulær logikk. Jf. Schechner, R. (1988). <em>Environmental Theater</em>. Applause.</p>
+      <div class="tech-close" onclick="toggleTech('dramt-sirk', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- SIMULTAN -->
+  <div class="technique" id="dramt-sim">
+    <div class="technique-header">
+      <div class="technique-left">
+        <div class="technique-name">Simultan</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-sim', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">Flere handlinger skjer samtidig, slik at publikum selv må velge hvor de retter sitt fokus.</p>
+      <p class="dramt-source-inline">NB: «Simultan dramaturgi» er et moderne analytisk begrep, men praksisen er gammel — se middelalderen i Teaterhistorie.</p>
+      <div class="tech-close" onclick="toggleTech('dramt-sim', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- FLAT -->
+  <div class="technique" id="dramt-flat">
+    <div class="technique-header">
+      <div class="technique-left">
+        <div class="technique-name">Flat dramaturgi</div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-flat', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">Ikke-lineære, ikke-hierarkiske sceniske strukturer som prioriterer assosiative, romlige og materielle relasjoner over tradisjonell handling, kausalitet og karakterutvikling. Favoriserer sykliske, horisontale eller «kartlignende» erfaringer — tilskueren navigerer temaer og bilder fremfor å følge et fast narrativ.</p>
+      <p class="dramt-source-inline">Kilde: Kunsthøgskolen i Oslo</p>
+      <div class="tech-close" onclick="toggleTech('dramt-flat', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- POSTDRAMATISK -->
+  <div class="technique" id="dramt-post">
+    <div class="technique-header">
+      <div class="technique-left">
+        <div class="technique-name">Postdramatisk <span style="font-size:11px; color:var(--text3); font-weight:400;">Lehmann, 2006</span></div>
+      </div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-post', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">En bred kategori som rommer alle dramaturgiske grep som bryter med det tradisjonelle dramaet. Fokus på hendelse fremfor handling — det som skjer mellom utøver og publikum i øyeblikket, ikke en historie som skal fortelles.</p>
+      <ul class="dramt-list">
+        <li>Oppløsning av karakterer — utøverne er seg selv eller «figurer», ikke fiktive roller</li>
+        <li>Brudd på tid og rom — handlingen følger ikke nødvendigvis en logisk rekkefølge</li>
+        <li>Likestilling av sceniske elementer — tekst er ikke overordnet lyd, lys eller kropp (<strong>likestilt dramaturgi</strong>, Arntzen, UiB)</li>
+      </ul>
+      <p class="dramt-source-inline">NB: Begrepet er omdiskutert. Teaterteoretikeren Elinor Fuchs kritiserte Lehmanns brede bruk av begrepet i <em>TDR</em> (2008) — hun mente at Lehmann samler for mange ulike kunstnere og retninger under én paraply, og at begrepet dermed mister presisjon. Flere forskere, inkludert Fuchs, har også påpekt at ideen om det postdramatiske ikke er Lehmanns originale — begrepet ble først introdusert av Andrzej Wirth (Institut für Angewandte Theaterwissenschaft) og Richard Schechner (NYU). Les mer: Lehmann, H-T. (2006). <em>Postdramatic Theatre</em>. Routledge. · Fuchs, E. (2008). «Postdramatic Theatre by Hans-Thies Lehmann and Karen Jürs-Munby (review)». <em>TDR</em>, 52(2), s. 179–180.</p>
+      <div class="tech-close" onclick="toggleTech('dramt-post', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  </div><!-- end grp-body former -->
+  </div><!-- end grp-section former -->
+
+  <!-- DRAMATURGISKE VIRKEMIDLER -->
+  <div class="grp-section" id="grp-virkemidler">
+  <div class="grp-header" onclick="toggleGrp('grp-virkemidler')">
+    <span class="grp-title">Dramaturgiske virkemidler <span style="font-size:10px; font-weight:400; text-transform:none; letter-spacing:0;">Gladsø, 2005</span></span>
+    <button type="button" class="vis-btn">Vis</button>
+  </div>
+  <div class="grp-body">
+
+  <div class="technique" id="dramt-spenning">
+    <div class="technique-header">
+      <div class="technique-left"><div class="technique-name">Spenning</div></div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-spenning', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">Forholdet mellom forventning og utløsning i forløpet.</p>
+      <div class="tech-close" onclick="toggleTech('dramt-spenning', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  <div class="technique" id="dramt-kontraster">
+    <div class="technique-header">
+      <div class="technique-left"><div class="technique-name">Kontraster</div></div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-kontraster', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">Bruk av motsetninger (lys/mørke, lyd/stille) for å skape dynamikk.</p>
+      <div class="tech-close" onclick="toggleTech('dramt-kontraster', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  <div class="technique" id="dramt-ritualer">
+    <div class="technique-header">
+      <div class="technique-left"><div class="technique-name">Ritualer</div></div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-ritualer', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">Gjentakende, formelle handlinger som gir forestillingen tyngde og rituell logikk.</p>
+      <div class="tech-close" onclick="toggleTech('dramt-ritualer', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  <div class="technique" id="dramt-symboler">
+    <div class="technique-header">
+      <div class="technique-left"><div class="technique-name">Symboler</div></div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-symboler', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">Gjenstander, figurer eller handlinger som bærer gjentatt eller forsterket betydning innenfor et bestemt verk. Villanden i Ibsens stykke er et dramaturgisk symbol — den bygges opp over tid og får stadig mer mening. Det skiller seg fra et semiotisk tegn, som kan være et hvilket som helst element publikum tolker som meningsbærende. Se <a href="fordypning.html#bl-semiotikk">Fordypning: Semiotikk vs. dramaturgiske symboler</a>.</p>
+      <div class="tech-close" onclick="toggleTech('dramt-symboler', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  <div class="technique" id="dramt-rytme">
+    <div class="technique-header">
+      <div class="technique-left"><div class="technique-name">Rytme</div></div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-rytme', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">Den tidsmessige organiseringen og tempoet i forestillingen.</p>
+      <div class="tech-close" onclick="toggleTech('dramt-rytme', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  <div class="technique" id="dramt-gjentagelser">
+    <div class="technique-header">
+      <div class="technique-left"><div class="technique-name">Gjentagelser</div></div>
+      <button type="button" class="vis-btn" onclick="toggleTech('dramt-gjentagelser', this)">Vis</button>
+    </div>
+    <div class="technique-body">
+      <p class="dramt-text">Repetisjon av elementer for å skape gjenkjennelse eller forsterke et budskap.</p>
+      <div class="tech-close" onclick="toggleTech('dramt-gjentagelser', null)">Skjul ↑</div>
+    </div>
+  </div>
+
+  </div><!-- end grp-body virkemidler -->
+  </div><!-- end grp-section virkemidler -->
+
+  <!-- MODERNE TEATER: TO GREINER -->
+  <div class="tmat-section" id="tm-greiner">
+    <div class="tmat-header" onclick="toggleTmat('tm-greiner')">
+      <span class="tmat-title">Moderne teater: to greiner</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>Fra fin de siècle hadde kunstnerne to ulike tilnærminger til det å uttrykke menneskets tilstand:</p>
+      <p><strong>Vitenskapsmennene</strong> — inspirert av Darwin. Årsak og virkning, det logiske og objektive. Naturalisme, realisme, og etter hvert Brechts episke teater. (Merk: Brecht begynte som ekspresjonist, men hoppet over til den andre grenen.)</p>
+      <p><strong>Prestene og demonene</strong> — inspirert av Freud og det ubevisste. Det spirituelle, intuitive og subjektive. Symbolisme, ekspresjonisme, surrealisme, og Artauds grusomhetsteater. Langs kontinuumet fra det abstrakte mot det ikke-representasjonelle.</p>
+      <p>Da surrealistene begynte å lene seg mot politikken og dermed nærmet seg den «objektive» grenen, gikk Artaud den andre veien og gravde seg dypere ned i det surrealistene eksperimenterte med.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-greiner')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- POSTMODERNISME -->
+  <div class="tmat-section" id="tm-postmoderne">
+    <div class="tmat-header" onclick="toggleTmat('tm-postmoderne')">
+      <span class="tmat-title">Postmodernisme — 9 trekk</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <ul class="bullets">
+        <li>Selvreflekterende</li>
+        <li>Ironi og parodi</li>
+        <li>Ingen skille mellom høy og lav kultur</li>
+        <li>Retro</li>
+        <li>Stiller spørsmål til historie og tradisjonelle oppfatninger</li>
+        <li>Brudd med tradisjonell bruk av tid i dramaturgi</li>
+        <li>Dystopia — en verden der penger betyr makt; paranoia og overvåkning</li>
+        <li>Virkelighetsforvrengning</li>
+        <li>Multimedial kommunikasjon fremfor bare litteratur eller skrift</li>
+      </ul>
+      <p class="tmat-source">Felluga, D. «General Introduction to Postmodernism.» <em>Introductory Guide to Critical Theory</em>. Purdue University.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-postmoderne')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- SEMIOTIKK -->
+  <div class="tmat-section" id="tm-semiotikk">
+    <div class="tmat-header" onclick="toggleTmat('tm-semiotikk')">
+      <span class="tmat-title">Semiotikk — tegn og koder i teateret</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="tmat-body">
+      <p>Semiotikk er læren om tegn og betydning. I teateret kommuniserer alt — ikke bare teksten. Hvert element på scenen er et potensielt tegn som publikum tolker.</p>
+      <div class="row" style="margin-top:0.8rem;">
+        <div class="row-label">Hva er et tegn?</div>
+        <div class="row-content">Et tegn er noe som betyr noe annet enn seg selv. En rød kjole på scenen er ikke bare en kjole — den kan bety lidenskap, fare, makt eller blod, avhengig av kontekst. Publikum tolker kontinuerlig alle sceniske elementer som potensielle tegn.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Ikoniske tegn</div>
+        <div class="row-content">Ligner det de representerer. Et bord på scenen representerer et bord. Et foto av en person representerer den personen. Naturalistisk scenografi er full av ikoniske tegn.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Indeksikale tegn</div>
+        <div class="row-content">Peker på noe uten å ligne det. Røyk indikerer ild. En tom stol indikerer fravær. Stillhet kan indikere spenning eller død. Mange av de sterkeste teatrale virkemidlene er indeksikale.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Symbolske tegn</div>
+        <div class="row-content">Konvensjonelle tegn der forbindelsen er kulturelt bestemt — ikke naturlig. Et flagg symboliserer en nasjon. Svart symboliserer sorg i vestlig kultur, hvitt i mange asiatiske kulturer. Symbolske tegn forutsetter felles kulturell kode mellom scene og publikum.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Koder</div>
+        <div class="row-content">Tegn virker innenfor koder — systemer av konvensjoner publikum kjenner. Teaterkoder inkluderer: belysning (spot = fokus), musikk (dur = glede, moll = sorg), kostyme (frakk = autoritet). Regissøren kan bekrefte eller bryte kodene bevisst.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">I analysen</div>
+        <div class="row-content">Spør: Hva er tegnet? Hva refererer det til? Hvilken kode aktiverer det? Er det ikonisk, indeksikal eller symbolsk? Og: er bruken av tegnet konsistent eller ironisk — bekrefter det helheten, eller bryter det med den?</div>
+      </div>
+      <p class="tmat-source">Elam, K. (1980). <em>The Semiotics of Theatre and Drama</em>. Methuen. · Eigtved, M. (2007). <em>Forestillingsanalyse</em>. Forlaget Samfundslitteratur.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-semiotikk')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- REGISSØRENS VALG -->
+  <div class="tmat-section" id="tm-sjanger">
+    <div class="tmat-header" onclick="toggleTmat('tm-sjanger')">
+      <span class="tmat-title">Sjanger, spillestil og teaterform</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <p style="font-style:italic; color:var(--text2); font-size:13px; padding:0.3rem 0 0.5rem; margin:0;">Sjanger, spillestil, teatermodell — og hvorfor de ikke er det samme.</p>
+    <div class="tmat-body">
+      <p style="margin-bottom:0.8rem;">Regissørens valg av teaterform, sjanger og dramaturgi er det som gir en forestilling sitt unike sceniske uttrykk og dramaturgiske form.</p>
+
+      <div style="background:var(--border2); border-radius:4px; padding:0.8rem 1rem; margin:0.5rem 0 0.8rem;">
+        <p><strong>Teaterform</strong> — definert av konvensjonene for hvordan forestillingen lages og presenteres. Teaterformen fastslår blant annet publikumskontrakten. Eks: commedia dell'arte, forumteater, gateteater, kabuki.</p>
+        <p style="margin-top:0.4rem;"><strong>Sjanger</strong> — hva slags historie fortelles? Tone, tema og publikums forventninger til utfall. Eks: tragedie, komedie, melodrama, farse.</p>
+        <p style="margin-top:0.4rem;"><strong>Publikumskontrakt</strong> — den implisitte avtalen mellom forestilling og publikum som følger av teaterformen.</p>
+        <p style="margin-top:0.4rem;"><strong>Teatermodell</strong> — den fysiske og romlige organiseringen av forholdet mellom scene og sal: proscenium, traverse, black box, arena, site-specific.</p>
+        <p style="margin-top:0.4rem;"><strong>Dramaturgisk modell</strong> — hvordan er fortellingen strukturert? Se <a href="#grp-modeller">Dramaturgiske modeller</a>.</p>
+        <p style="margin-top:0.4rem;"><strong>Dramaturgisk form</strong> — det helhetlige sceniske uttrykket publikum faktisk får.</p>
+        <p style="margin-top:0.7rem; font-style:italic;">Det finnes ingen fasit på rekkefølgen når en regissør tar valg. En valgt teaterform vil ofte implisere en sjanger. En valgt sjanger vil ofte begrense valg av teaterform.</p>
+        <p style="margin-top:0.5rem; padding:0.5rem 0.6rem; background:var(--bg); border-left:3px solid var(--border2); font-size:12px;"><strong>NB:</strong> Teaterform og teatermodell henger ofte tett sammen. Om en regissør velger en uventet teatermodell vil det utfordre publikum — og dermed også publikumskontrakten.</p>
+      </div>
+
+      <p style="margin-top:0.8rem;"><strong>Spillestil</strong> <span style="font-size:12px; color:var(--text3); font-style:italic;">obs: ikke det samme som <a href="skuespill.html">skuespillerteknikker</a></span></p>
+      <p style="margin-top:0.4rem;">Valg av teaterets virkemidler skaper til sammen en forventet og gjenkjennelig uttrykksform — for eksempel commedia dell'arte, realisme eller gresk tragedie. Et spesifikt, helhetlig ekspressivt uttrykk som skuespilleren eller ensemblet skaper gjennom sine valgte bevegelseskvaliteter og stemmebruk. Spillestil kan kategoriseres som konvensjonell, realistisk, deklamatorisk eller stilisert.</p>
+      <p style="margin-top:0.5rem;">Stilisert kan videre avgrenses til for eksempel farse, «finsk fjernsynsteater», <a href="teaterfornyere.html">Pinteresque</a> eller <a href="teaterfornyere.html">Wilsonesque</a>. Spillestilen alene kan ofte signalisere sjanger til et publikum.</p>
+
+      <div class="dramt-note-box" style="margin-top:0.8rem;">
+        <p class="dramt-note-label">NB — «Konvensjonell» spillestil</p>
+        <p class="dramt-note-text">«Konvensjonell» brukes her for å beskrive en teatralsk presentasjon av en troverdig karakter — der skuespilleren arbeider med utgangspunkt i psykologisk realisme (motivasjoner og fysiske handlinger), men der uttrykket på scenen er forsterket og teatralsk. Dette skiller seg fra samtidens ideal om realisme som illusjon — slik vi kjenner det fra film og kammerteateret.</p>
+      </div>
+
+      <p class="tmat-source">Eigtved, M. (2007). <em>Forestillingsanalyse</em>. Forlaget Samfundslitteratur. · Gladsø, S. et al. (2005). <em>Dramaturgi</em>. Universitetsforlaget. · Nygaard, J. (1990). <em>Om teater</em>.</p>
+      <div class="tmat-close" onclick="toggleTmat('tm-sjanger')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- RESSURSER -->
+  <div style="margin-top:2.5rem">
+
+  <div class="dramt-video">
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/tBSpe3CuPTU"
+      title="Dramaturgi"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+  <a class="wakelet-link" href="https://www.youtube.com/playlist?app=desktop&list=PLjGZsWkDYJ7iMBqAT-UWcbHKALcxYVNo9" target="_blank">YouTube: Spilleliste — dramaturgi ↗</a>
+
+
+  <nav class="chapter-nav">
+    <a class="chapter-nav-prev" href="teaterfornyere.html">← Teaterfornyere</a>
+    <a class="chapter-nav-next" href="analyse.html">Analyse →</a>
+  </nav>
+</div><!-- end .page -->
+
+<footer class="site-footer">
+  © 2026 · Redaktør: <a href="/cdn-cgi/l/email-protection#4d3f282363262c3925283f242328633d223a2821210d3e26222128633f222a2b26632322">Ren Powell</a>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  document.querySelector('.theme-toggle').textContent = next === 'dark' ? '☽' : '☀︎';
+  localStorage.setItem('theme', next);
+}
+
+const saved = localStorage.getItem('theme');
+if (saved) {
+  document.documentElement.setAttribute('data-theme', saved);
+  if (saved === 'dark') document.querySelector('.theme-toggle').textContent = '☽';
+}
+
+function toggleGrp(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const btn = el.querySelector('.grp-header .vis-btn');
+  if (btn) btn.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleTmat(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const btn = el.querySelector('.tmat-header .vis-btn');
+  if (btn) btn.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleTech(id, btn) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const b = btn || el.querySelector('.vis-btn');
+  if (b) b.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleDramt(btn) {
+  const dramt = btn.closest('.dramt');
+  const extra = dramt.querySelector('.dramt-extra');
+  const isHidden = extra.hidden;
+  extra.hidden = !isHidden;
+  const topBtn = dramt.querySelector('.vis-btn');
+  topBtn.textContent = isHidden ? 'Skjul' : 'Vis mer';
+  topBtn.setAttribute('aria-expanded', isHidden);
+}
+</script>
+
+<style>
+
+.grp-section { border-bottom: 1px solid var(--border2); }
+.grp-header { display:flex; align-items:center; justify-content:space-between; padding:0.8rem 0; cursor:pointer; user-select:none; }
+.grp-title { font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--text3); }
+.grp-body { display:none; padding-top:0.2rem; }
+.grp-section.open > .grp-body { display:block; }
+
+.tmat-section { border-bottom: 1px solid var(--border2); }
+.tmat-header { display:flex; align-items:center; justify-content:space-between; padding:0.8rem 0; cursor:pointer; user-select:none; }
+.tmat-title { font-size:14px; font-weight:700; color:var(--text); }
+.tmat-body { display:none; padding:0 0 1rem; font-size:14px; color:var(--text); line-height:1.6; }
+.tmat-section.open .tmat-body { display:block; }
+.tmat-close { display:block; text-align:center; font-size:12px; color:var(--text3); cursor:pointer; padding:0.8rem 0 0.2rem; margin-top:0.5rem; border-top:1px solid var(--border2); }
+.tmat-close:hover { color:var(--text); }
+.tmat-source { font-size:12px; color:var(--text3); font-style:italic; margin-top:0.8rem; line-height:1.5; }
+.technique { border-bottom: 1px solid var(--border2); }
+.technique-header { display:flex; align-items:center; justify-content:space-between; padding:0.7rem 0; }
+.technique-left { flex:1; }
+.technique-name { font-size:14px; font-weight:700; }
+.technique-body { display:none; padding:0 0 0.8rem; }
+.technique.open .technique-body { display:block; }
+.tech-close { display:block; text-align:center; font-size:12px; color:var(--text3); cursor:pointer; padding:0.8rem 0 0.2rem; margin-top:0.5rem; border-top:1px solid var(--border2); }
+.tech-close:hover { color:var(--text); }
+
+.technique { border-bottom: 1px solid var(--border2); }
+.technique-header { display:flex; align-items:center; justify-content:space-between; padding:0.7rem 0; }
+.technique-left { flex:1; }
+.technique-name { font-size:14px; font-weight:700; }
+.technique-body { display:none; padding:0 0 0.8rem; }
+.technique.open .technique-body { display:block; }
+.tech-close { display:block; text-align:center; font-size:12px; color:var(--text3); cursor:pointer; padding:0.8rem 0 0.2rem; margin-top:0.5rem; border-top:1px solid var(--border2); }
+.tech-close:hover { color:var(--text); }
+.dramt-section {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  padding-bottom: 0.6rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--text3);
+  border-bottom: 1px solid var(--border2);
+  margin-bottom: 0.2rem;
+  margin-top: 2.5rem;
+}
+
+.dramt-source {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text3);
+  font-style: italic;
+  margin-left: 0.5rem;
+}
+
+.dramt-source-inline {
+  font-size: 12px;
+  color: var(--text3);
+  font-style: italic;
+  margin: 0.4rem 0 0;
+  line-height: 1.5;
+}
+
+.dramt {
+  padding: 0.9rem 0 0.7rem;
+  border-bottom: 1px solid var(--border2);
+}
+
+.dramt-term {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.dramt-text {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dramt-sub-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text2);
+  margin: 0.9rem 0 0.3rem;
+  letter-spacing: 0.03em;
+}
+
+.dramt-list {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0.3rem 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dramt-list li {
+  padding-left: 1em;
+  position: relative;
+  line-height: 1.6;
+}
+
+.dramt-list li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: var(--text3);
+}
+
+.dramt-note-box {
+  background: var(--border2);
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  margin: 0.2rem 0;
+}
+
+.dramt-note-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text2);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.dramt-note-text {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dramt-video {
+  margin: 1rem 0;
+}
+
+.wakelet-link {
+  display: block;
+  font-size: 14px;
+  color: var(--text);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border2);
+  text-decoration: none;
+}
+
+.wakelet-link:hover {
+  color: var(--text2);
+}
+
+.diag
+}
+</style>
+</body>
+</html>
