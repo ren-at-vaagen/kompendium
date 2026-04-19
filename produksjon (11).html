@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produksjon — Teaterfag kompendium</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="vg-filter.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-home" href="index.html">← Kompendium</a>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <span class="nav-title">Produksjon</span>
+      <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Bytt fargemodus">☀︎</button>
+      <a href="sok.html" class="search-link" aria-label="Søk">⌕ Søk</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+  <p class="chapter-number" style="margin-bottom:0.2rem;">05</p>
+  <h1 class="page-title">PRODUKSJON</h1>
+  <p class="page-sub">Fra idé til forestilling — prosess og praksis.</p>
+
+  <a class="pensum-link" href="https://sceneapp-a6ca0d.gitlab.io/" target="_blank">Sceneapp — dokumentasjon og kommunikasjon ↗ <span style="font-size:11px; color:var(--text3);">Demo: demo1 · abc</span></a>
+
+  <!-- SKUESPILLEREN -->
+  <div class="prod-section" id="ps-skuespillerens-rolle">
+    <div class="prod-header" onclick="toggleProd('ps-skuespillerens-rolle')">
+      <span class="prod-title">Skuespillerens rolle</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="prod-body">
+      <p>Å spille teater handler ikke primært om å lære seg replikker. Det handler om tilstedeværelse og ekte kontakt — med de andre på scenen, den fiktive verden, og av og til publikum. Samspill er ikke én teknikk blant andre — det er selve grunnlaget for alt scenisk arbeid.</p>
+      <p style="margin-top:0.6rem;">En skuespiller bruker <strong>skuespillteknikk</strong> for å oppnå en bestemt <strong>skuespillstil</strong>. Stilen springer ut av sjangeren og regissørens visjon — en naturalistisk forestilling krever en annen stil enn commedia dell'arte eller episk teater, og dermed andre teknikker.</p>
+      <p style="margin-top:0.6rem;">Graden av autonomi en skuespiller har i prosessen varierer etter arbeidsmodellen for produksjonen. I noen modeller er skuespilleren medskaper — i andre er rollen å utføre en visjon som allerede er ferdig tenkt.</p>
+      <div class="prod-close" onclick="toggleProd('ps-skuespillerens-rolle')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- AUTEUR-TEATER -->
+  <div class="prod-section vg2" id="ps-auteur">
+    <div class="prod-header" onclick="toggleProd('ps-auteur')">
+      <span class="prod-title">Auteur-teater og totalt teater</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="prod-body">
+      <p>I samtidseateret finnes regissører som aktivt streber etter å skape <strong>totalt teater</strong> — regissører som selv skaper verket de setter opp, koreograferer bevegelsene, designer scenografien og planlegger lyset. Disse kalles gjerne <strong>auteur</strong>-regissører, et begrep hentet fra nybølge-filmteorien: en regissør som dominerer hele skapelsesprosessen slik at sluttproduktet er et personlig uttrykk.</p>
+      <p style="margin-top:0.6rem;">Mange auteur-regissører er også billedkunstnere. Auteur-regissøren dominerer hele skapelsesprosessen — tekst, kropp, rom, lys og lyd er likestilte elementer under én kunstnerisk visjon. De mest fremtredende auteurene er fra samtidseateret: Robert Wilson, Richard Foreman og Robert Lepage er tydelige eksempler — men begrunnelsen for denne graden av regikontroll har røtter tilbake til begynnelsen av 1900-tallet, der den ble formulert først av Gordon Craig.</p>
+      <p style="margin-top:0.6rem;">Craig gikk langt i sin tenkning om regissørens autoritet. Hans begrep <strong>übermarionette</strong> beskrev idealskuespilleren som en fullstendig kontrollert figur — uten egen vilje, et perfekt instrument for regissørens visjon. Begrepet er provoserende, men peker på noe reelt: i auteur-teateret er skuespillerens autonomi minimal. Se <a href="teaterfornyere.html#appia">Craig i Teaterfornyere</a>.</p>
+      <p class="prod-note" style="margin-top:0.7rem;">Kilde: Callery, D., Granville-Barker, H. &amp; Williams, D. (red.). <em>The Cambridge Introduction to Theatre Directing</em>. Cambridge University Press.</p>
+      <div class="prod-close" onclick="toggleProd('ps-auteur')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- DEVISING -->
+  <div class="prod-section vg2" id="ps-devising">
+    <div class="prod-header" onclick="toggleProd('ps-devising')">
+      <span class="prod-title">Devising</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="prod-body">
+      <p>En arbeidsmodell der ensemble eller regissør ikke har valgt forestillingens endelige form, modell eller estetiske uttrykk på forhånd. Forestillingen skapes gjennom utforsking, improvisasjon og kollektive beslutninger underveis i prosessen — heller enn å realisere en forhåndsbestemt plan.</p>
+      <p style="margin-top:0.6rem;">Devising skiller seg fra tradisjonell regi ved at tekst, form og uttrykk oppstår i prosessen — ikke før den. Devising bruker ofte en <strong>flat organisasjonsmodell</strong> — alle i ensemblet bidrar likeverdig til skapelsen, uten en fast hierarkisk struktur.</p>
+      <p class="prod-note" style="margin-top:0.7rem;">Kilde: Oddey, A. (1994). <em>Devising Theatre: A Practical and Theoretical Handbook</em>. Routledge.</p>
+      <div class="prod-close" onclick="toggleProd('ps-devising')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- SCENEFORMER OG ROM -->
+  <div class="prod-section" id="ps-sceneformer">
+    <div class="prod-header" onclick="toggleProd('ps-sceneformer')">
+      <span class="prod-title">Sceneformer og rom</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="prod-body">
+      <p>Forholdet mellom scene og sal former publikumsopplevelsen fundamentalt — før en eneste replikk er sagt. Valget av sceneform er alltid et kunstnerisk og dramaturgisk valg.</p>
+      <div class="row" style="margin-top:0.8rem;">
+        <div class="row-label">Titteskapsscene</div>
+        <div class="row-content">Publikum sitter foran og ser inn i en bilderamme. Scenen er adskilt fra salen. Gir naturlig fjerde vegg og illusjonsteatrets konvensjoner. Brukes i de fleste etablerte teaterbygninger.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Arenascene</div>
+        <div class="row-content">Publikum omringer scenen på alle fire sider. Skuespillerne er alltid synlige fra alle vinkler. Krever bevisst arrangement/blokkering slik at ingen del av publikum alltid ser ryggen. Skaper intimitet, men gjør scenografi komplisert.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Thrust-scene</div>
+        <div class="row-content">Scenen stikker ut i salen og omringes av publikum på tre sider — som The Globe Theatre i England. Kombinerer intimitet med muligheten for bakvegg og scenografi.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Traverse-scene</div>
+        <div class="row-content">Publikum sitter på begge langsider av en avlang scene. Handlingen utspiller seg mellom dem — som en catwalk. Gir spennende muligheter for bevegelse langs aksen.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Black box</div>
+        <div class="row-content">Et nøytralt, svartmalt rom uten fast scene eller publikumsplassering. Kan konfigureres fritt — titteskapsscene, arena, traverse eller noe helt annet. Gir maksimal fleksibilitet og er standardmodellen i mange øvingslokaler og eksperimentelle teatre.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Promenadeteater</div>
+        <div class="row-content">Publikum beveger seg gjennom rommet og forestillingen skjer rundt dem. Ingen fast scene. Kan skje i teatersaler, fabrikker, utendørs eller historiske bygg. Grenser mot immersive theatre.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Funnet rom</div>
+        <div class="row-content">En ikke-teatral lokasjon brukes som spillested — fabrikkhall, kirke, stasjon, gate. Rommet bærer mening og historie som forestillingen aktiverer. Peter Brook og Grotowski brukte funnet rom bevisst.</div>
+      </div>
+      <div class="row">
+        <div class="row-label">Site-specific</div>
+        <div class="row-content">Forestillingen er laget <em>for</em> ett bestemt sted — ikke bare fremført der. Stedet er ikke et nøytralt lerret, men en integrert del av verket. Kan ikke flyttes til en annen lokasjon uten at forestillingen endrer karakter fundamentalt.</div>
+      </div>
+      <div class="prod-close" onclick="toggleProd('ps-sceneformer')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- ETIKK I PRØVEROMMET -->
+  <div class="prod-section" id="ps-etikk">
+    <div class="prod-header" onclick="toggleProd('ps-etikk')">
+      <span class="prod-title">Etikk i prøverommet</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="prod-body">
+      <p>Et trygt prøverom er en forutsetning for godt kunstnerisk arbeid. Når folk føler seg trygge, tar de større kunstneriske risiko. Etiske rammer bør etableres tidlig i prosessen.</p>
+      <p class="prod-note" style="margin-top:0.4rem;">Basert på allment anerkjent praksis i teaterpedagogikk.</p>
+
+      <p style="font-size:11px; font-weight:700; color:var(--text3); text-transform:uppercase; letter-spacing:0.08em; margin:1rem 0 0.4rem;">Arbeidsregler</p>
+      <ul class="bullets" style="margin-bottom:1rem;">
+        <li>Møt presis og forberedt — andres tid er like verdifull som din</li>
+        <li>Telefonen er borte under prøve</li>
+        <li>Si ifra i god tid hvis du ikke kan møte</li>
+        <li>Kle deg passende for fysisk arbeid</li>
+        <li>Gi konstruktive tilbakemeldinger — kun om det er etterspurt</li>
+        <li>Det som skjer i prøverommet, blir i prøverommet</li>
+        <li>Deling av bilder og video fra prøverommet krever samtykke fra alle involverte</li>
+      </ul>
+
+      <div class="prod-point"><span class="prod-num">1</span><div>
+        <strong>Samtykke og grenser</strong>
+        <p>Alle fysiske og emosjonelle krav i produksjonen kommuniseres tydelig før arbeidet begynner. Ingen skal overraskes av hva som forventes av dem.</p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">2</span><div>
+        <strong>Maktforhold</strong>
+        <p>Regissøren har makt i rommet. Ubehag er en del av kunstnerisk utforsking — men hvis en retning føles utrygg, skal skuespilleren si dette direkte til regissøren (læreren).</p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">3</span><div>
+        <strong>Emosjonelt krevende materiale</strong>
+        <p>Prøverommet er ikke et terapirom. Studenter skal ikke bruke personlige traumer som råmateriale — av hensyn til medspillere og regissøren (læreren), som verken er i posisjon til eller skal settes i en posisjon til å fungere som terapeut. Hvis du befinner deg i en situasjon som føles emosjonelt overveldende, stopp og snakk med regissøren (læreren). Mental helse er en prioritet.</p>
+      </div></div>
+
+      <div class="prod-close" onclick="toggleProd('ps-etikk')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- TIDSLINJE -->
+  <div class="prod-section vg2" id="ps-tidslinje">
+    <div class="prod-header" onclick="toggleProd('ps-tidslinje')">
+      <span class="prod-title">Tradisjonell produksjonstidslinje</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="prod-body">
+      <p class="prod-note">Tradisjonelle produksjoner har en <strong>hierarkisk organisasjonsmodell</strong> — med regissøren, kunstnerisk leder eller produsent på toppen, og ulike fagroller under. 14 uker · 5 timer per uke · ca. 70 timer totalt — omtrent det samme som en amatørproduksjon. Rekkefølgen varierer: noen regissører starter med improvisasjon, andre med tekst eller blocking.</p>
+
+      <div class="timeline">
+
+        <div class="tl-block tl-start">
+          <div class="tl-week">Uke 1–2</div>
+          <div class="tl-label">Oppstart</div>
+          <ul class="tl-items">
+            <li>Auditions og casting</li>
+            <li>Lesing og research</li>
+            <li>Sette datoer — individuelle frister og avtaler</li>
+          </ul>
+        </div>
+
+        <div class="tl-block">
+          <div class="tl-week">Uke 3–5</div>
+          <div class="tl-label">Utforsking</div>
+          <ul class="tl-items">
+            <li>Improvisasjon / tekstarbeid / devising</li>
+            <li>Research og referanser</li>
+            <li>Scenografiske idéer under utvikling</li>
+          </ul>
+        </div>
+
+        <div class="tl-block">
+          <div class="tl-week">Uke 6–9</div>
+          <div class="tl-label">Forming</div>
+          <ul class="tl-items">
+            <li>Blocking og sceniske valg</li>
+            <li>Kostyme og rekvisitt under utvikling</li>
+            <li>Scenografi konkretiseres</li>
+          </ul>
+        </div>
+
+        <div class="tl-block">
+          <div class="tl-week">Uke 10–11</div>
+          <div class="tl-label">Konsolidering</div>
+          <ul class="tl-items">
+            <li>Kostyme, rekvisitt og regi på plass</li>
+            <li>Gjennomkjøringer</li>
+          </ul>
+        </div>
+
+        <div class="tl-block tl-marketing">
+          <div class="tl-week">Uke 12–13</div>
+          <div class="tl-label">Markedsføring og teknikk</div>
+          <ul class="tl-items">
+            <li>Markedsføring starter — kostyme og regi er klart</li>
+            <li>Teknisk prøve</li>
+            <li>Gjennomkjøringer med alle elementer</li>
+          </ul>
+        </div>
+
+        <div class="tl-block tl-final">
+          <div class="tl-week">Uke 14</div>
+          <div class="tl-label">Forestilling</div>
+          <ul class="tl-items">
+            <li>Generalprøve(r)</li>
+            <li>Forestilling(er)</li>
+          </ul>
+        </div>
+
+        <div class="tl-block tl-after">
+          <div class="tl-week">Etter</div>
+          <div class="tl-label">Post mortem</div>
+          <ul class="tl-items">
+            <li>Strukturert gjennomgang av prosessen</li>
+          </ul>
+        </div>
+
+      </div><!-- end timeline -->
+      <div class="prod-close" onclick="toggleProd('ps-tidslinje')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- REGIKONSEPT -->
+  <div class="prod-section vg2" id="ps-regi">
+    <div class="prod-header" onclick="toggleProd('ps-regi')">
+      <span class="prod-title">Del 1 — Regikonsept</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="prod-body">
+      <p class="prod-note">Dette er ikke en fasit, men én måte å organisere tankene om hvilke valg som skaper den endelige dramaturgiske formen. Gjelder ikke devising-teater, der de kunstneriske valgene tas underveis i prosessen.</p>
+
+      <div class="prod-point"><span class="prod-num">1</span><div>
+        <strong>Visjon</strong>
+        <p>Hva er din overordnede idé og hensikt med denne <span style="white-space:nowrap">oppsetningen?</span> Hvorfor <span style="white-space:nowrap">nå?</span> Hva ønsker du at publikum skal sitte igjen <span style="white-space:nowrap">med?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">2</span><div>
+        <strong>Tema og lesemåte</strong>
+        <p>Hvordan leser og tolker du <span style="white-space:nowrap">materialet?</span> Hvilke hovedtemaer ønsker du å <span style="white-space:nowrap">belyse?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">3</span><div>
+        <strong>Tekst og materiale</strong>
+        <p>Hvilken rolle spiller teksten i <span style="white-space:nowrap">oppsetningen?</span> Hva beholdes, endres eller legges til, og <span style="white-space:nowrap">hvorfor?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">4</span><div>
+        <strong>Teaterform</strong>
+        <p>Hvilken teatertradisjon ligger til <span style="white-space:nowrap">grunn?</span> Realistisk, episk, poetisk, fysisk teater, postdramatisk, <span style="white-space:nowrap">dokumentarisk?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">5</span><div>
+        <strong>Publikumskontrakt</strong>
+        <p>Åpen eller lukket <span style="white-space:nowrap">teatermodell?</span> Skal publikum observere, delta, konfronteres eller <span style="white-space:nowrap">medskape?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">6</span><div>
+        <strong>Arbeidsprosess</strong>
+        <p>Hvordan vil du jobbe med <span style="white-space:nowrap">ensemblet?</span> Improvisasjon, tekstarbeid, fysiske øvelser, research, devising, kollektiv dramaturgi. Prøvestruktur: lesing, blocking, gjennomkjøringer.</p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">7</span><div>
+        <strong>Etisk og sosial relevans</strong>
+        <p>Hvordan relaterer forestillingen seg til vår samtid — politisk, kulturelt, <span style="white-space:nowrap">menneskelig?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">8</span><div>
+        <strong>Målgruppe</strong>
+        <p>Hvem ønsker du å <span style="white-space:nowrap">nå?</span> Hvordan former målgruppen de kunstneriske valgene <span style="white-space:nowrap">dine?</span> Tenk også på hvem forestillingen reelt sett er åpen for — ikke bare hvem den er laget for.</p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">9</span><div>
+        <strong>Tid og sted i fiksjonen</strong>
+        <p>Hvor og når foregår handlingen i din <span style="white-space:nowrap">versjon?</span> Historisk, samtidsnært eller <span style="white-space:nowrap">abstrakt?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">10</span><div>
+        <strong>Casting og rollefordeling</strong>
+        <p>Hvordan tas <span style="white-space:nowrap">casting-beslutninger?</span> Audition, devising-basert eller <span style="white-space:nowrap">ensemble-beslutning?</span> Hvilke kunstneriske og etiske hensyn <span style="white-space:nowrap">gjelder?</span></p>
+      </div></div>
+
+      <div style="border-top:2px solid var(--border2); margin:1.2rem 0 0.8rem; padding-top:0.7rem;">
+        <p style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--text3); margin-bottom:0.3rem;">Kunstnerisk valg — virkemidler og uttrykk</p>
+      </div>
+
+      <div class="prod-point"><span class="prod-num">11</span><div>
+        <strong>Dramaturgiske valg av de dramaturgiske virkemidlene</strong>
+        <p>Klipp, kontraster, symboler, gjentagelser, parallellhandlinger, fortellerteknikker. <a href="dramaturgi.html">→ Drama og Dramaturgi</a></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">12</span><div>
+        <strong>Sceniske valg av de sceniske virkemidlene</strong>
+        <p>Hvordan støtter de sceniske virkemidlene <span style="white-space:nowrap">regikonseptet?</span> Se diagrammet nedenfor.</p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">13</span><div>
+        <strong>Konseptuell symbolbærer</strong>
+        <p>Hvilket bilde, objekt eller idé binder forestillingen <span style="white-space:nowrap">sammen?</span> Stormen, kartet, speilet, kappen, <span style="white-space:nowrap">kronen?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">14</span><div>
+        <strong>Estetisk uttrykk</strong>
+        <p>Helhetsuttrykk: farger, form, tone, rytme, materialitet. Hvordan ser og føles <span style="white-space:nowrap">forestillingen?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">15</span><div>
+        <strong>Fysisk uttrykk</strong>
+        <p>Hvordan brukes kroppen og rommet til å formidle <span style="white-space:nowrap">mening?</span> Koreografi, rytme, scenekamp, gestus.</p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">16</span><div>
+        <strong>Skuespillerstil og foreslåtte teknikker</strong>
+        <p>Regissøren fastsetter den overordnede stilen. Valg kan være realistisk eller stilisert, der skuespilleren:</p>
+        <ul class="bullets" style="margin-top:0.4rem;">
+          <li>a) går inn i rollen — Stanislavski-tradisjonen</li>
+          <li>b) presenterer rollefiguren uten illusjon — Brecht: publikum skal ikke «glemme» at det er en skuespiller</li>
+          <li>c) ikke spiller en rolle i det hele tatt — performance-tradisjon</li>
+        </ul>
+        <p style="margin-top:0.4rem;">Valg av konkrete teknikker kan skje i samarbeid med teaterpedagoger. <a href="skuespill.html">→ Skuespill</a></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">17</span><div>
+        <strong>Referanser, allusjoner og inspirasjonskilder</strong>
+        <p>Kunstverk, forestillinger, bilder, musikk, filosofi eller tekster som har påvirket visjonen.</p>
+      </div></div>
+
+      <div class="diagram-wrap" style="margin: 1rem 0 0.5rem;">
+        <img src="https://teateriperspektiv2.wordpress.com/wp-content/uploads/2024/02/da3d2-venn1-1.jpg"
+             alt="Venn-diagram — regikonsept" class="diagram-img">
+        <p class="diagram-caption">Regikonseptets elementer</p>
+      </div>
+
+      <div class="prod-close" onclick="toggleProd('ps-regi')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- PRODUKSJONSKONSEPT -->
+  <div class="prod-section vg2" id="ps-produksjon">
+    <div class="prod-header" onclick="toggleProd('ps-produksjon')">
+      <span class="prod-title">Del 2 — Produksjonskonsept</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="prod-body">
+
+      <div class="prod-point"><span class="prod-num">1</span><div>
+        <strong>Spillested og produksjonsrom</strong>
+        <p>Hvilket fysisk rom skal forestillingen spilles <span style="white-space:nowrap">i?</span> Hvilke muligheter og begrensninger gir det for <span style="white-space:nowrap">produksjonen?</span> Arena, black box, utescene, <span style="white-space:nowrap">site-specific?</span> Vurder også tilgjengelighet: rullestoltilgang, akustikk, sitteplasser og sansemessige hensyn — er lokalet tilgjengelig for <span style="white-space:nowrap">alle?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">2</span><div>
+        <strong>Organisasjonsmodell</strong>
+        <p>Hvordan er produksjonen <span style="white-space:nowrap">organisert?</span> Streng hierarki eller flat <span style="white-space:nowrap">organisasjon?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">3</span><div>
+        <strong>Praktisk gjennomføring og logistikk</strong>
+        <p>Hva må være på plass for at produksjonen skal fungere under prøver og <span style="white-space:nowrap">forestillinger?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">4</span><div>
+        <strong>HMS og sikkerhet</strong>
+        <p>Scenekamp, løft, strøm, rigging — hvilke sikkerhetshensyn <span style="white-space:nowrap">gjelder?</span> Hvem har <span style="white-space:nowrap">ansvar?</span></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">5</span><div>
+        <strong>Markedsføring og publikum</strong>
+        <p>Målgruppe, kanaler (plakat, sosiale medier, skolekanaler, lokalpresse), samarbeid mellom produksjonsstab og markedsføringsansvarlige. Markedsføring starter når kostyme, rekvisitt og regi er på plass.</p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">6</span><div>
+        <strong>Budsjett</strong>
+        <p>Forventede utgifter (kostyme, scenografi, rekvisitter, teknikk, markedsføring), tilgjengelige ressurser, prioriteringer. <a href="https://teateriperspektiv2.wordpress.com/2026/04/03/skyggeregnskap/" target="_blank">→ Skyggeregnskap-eksempel</a></p>
+      </div></div>
+
+      <div class="prod-point"><span class="prod-num">7</span><div>
+        <strong>Dokumentasjon</strong>
+        <p>Foto, video, produksjonslogg. <a href="https://sceneapp-a6ca0d.gitlab.io/" target="_blank">→ Sceneapp</a></p>
+      </div></div>
+
+      <div class="prod-close" onclick="toggleProd('ps-produksjon')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- HVEM GJØR HVA -->
+  <div class="prod-section vg2" id="ps-roller">
+    <div class="prod-header" onclick="toggleProd('ps-roller')">
+      <span class="prod-title">Hvem gjør <span style="white-space:nowrap">hva?</span></span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="prod-body">
+
+      <div class="rolle" id="rolle-produsent">
+        <div class="rolle-header" onclick="toggleRolle('rolle-produsent')">
+          <span class="rolle-name">Produsent</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Overordnet ansvar for at produksjonen gjennomføres innenfor budsjett og tidsplan</li>
+            <li>Koordinerer mellom de ulike faggruppene</li>
+            <li>Håndterer praktiske og administrative oppgaver — kontrakter, økonomi, markedsføring og lokaler</li>
+            <li>I profesjonelle produksjoner er produsenten ofte den som initierer prosjektet og engasjerer regissøren</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-regissør">
+        <div class="rolle-header" onclick="toggleRolle('rolle-regissør')">
+          <span class="rolle-name">Regissør</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Ansvar for det kunstneriske arbeidet og ensemblets samarbeid</li>
+            <li>Samarbeide med inspisient om planlegging og struktur</li>
+            <li>Koordinere ensemblet på en demokratisk og rettferdig måte</li>
+            <li>Ta kunstneriske beslutninger og ha siste ord</li>
+            <li>Gi korte, jevnlige notater til ensemblet</li>
+            <li>Utvikle felles visjon og regi-/produksjonskonsept</li>
+          </ul>
+          <p class="prod-note" style="margin-top:0.6rem;">Læreren fungerer som mentor og acting coach.</p>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-regiass">
+        <div class="rolle-header" onclick="toggleRolle('rolle-regiass')">
+          <span class="rolle-name">Regiassistent</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Føre arrangementsnotater</li>
+            <li>Planlegge og lede oppvarming for ensemblet</li>
+            <li>Holde løpende oversikt over endringer i tekst og struktur</li>
+            <li>Følge opp avtaler og praktiske behov i prøveprosessen</li>
+            <li>Samarbeide med inspisient og bidra til sceniske valg</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="rolle" id="rolle-dramaturg">
+        <div class="rolle-header" onclick="toggleRolle('rolle-dramaturg')">
+          <span class="rolle-name">Dramaturg</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Arbeider med tekstgrunnlaget og forestillingens dramaturgiske struktur</li>
+            <li>Analyserer manus, gir tilbakemelding på fremdrift og spenningskurve</li>
+            <li>Fungerer som kritisk samtalepartner for regissøren</li>
+            <li>I devising-prosesser hjelper dramaturgen ensemblet med å finne form og struktur i materialet som oppstår</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-inspisient">
+        <div class="rolle-header" onclick="toggleRolle('rolle-inspisient')">
+          <span class="rolle-name">Inspisient</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Lede produksjonsmøter og skrive referat</li>
+            <li>Følge opp avtaler, tidsplaner og praktisk gjennomføring</li>
+            <li>Sikre flyt og oversikt i prøve- og produksjonsarbeidet</li>
+            <li>Være bindeledd mellom regi, ensemble og øvrige funksjoner</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-scenografi">
+        <div class="rolle-header" onclick="toggleRolle('rolle-scenografi')">
+          <span class="rolle-name">Scenografi</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Utvikle scenografisk idé i samarbeid med regi og ensemble</li>
+            <li>Teste rom, plassering og bruk av elementer i prøver</li>
+            <li>Bidra til realisering innenfor tilgjengelige rammer</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-rekvisitt">
+        <div class="rolle-header" onclick="toggleRolle('rolle-rekvisitt')">
+          <span class="rolle-name">Rekvisitter</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Ha oversikt over alle rekvisitter i produksjonen</li>
+            <li>Innhenting, produksjon og organisering</li>
+            <li>Sikre presis bruk i prøver og forestilling</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-kostyme">
+        <div class="rolle-header" onclick="toggleRolle('rolle-kostyme')">
+          <span class="rolle-name">Kostyme</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Utvikle kostymekonsept i dialog med regi og ensemble</li>
+            <li>Bidra praktisk i prøver — testing, justering, funksjon i bevegelse</li>
+            <li>Sikre at kostyme støtter karakter og scenisk uttrykk</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-sminke">
+        <div class="rolle-header" onclick="toggleRolle('rolle-sminke')">
+          <span class="rolle-name">Sminke og hår</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Utvikle sminke- og håruttrykk i tråd med karakter og helhet</li>
+            <li>Teste og justere uttrykk i prøver</li>
+            <li>Bidra til realisering før forestilling</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-lys">
+        <div class="rolle-header" onclick="toggleRolle('rolle-lys')">
+          <span class="rolle-name">Lys</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Utvikle lysidé i samspill med scenografi og regi</li>
+            <li>Teste stemning, fokus og overganger i prøver</li>
+            <li>Tilpasse løsninger til rom og tilgjengelig utstyr</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-lyd">
+        <div class="rolle-header" onclick="toggleRolle('rolle-lyd')">
+          <span class="rolle-name">Lyd og musikk</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Utvikle lydlig konsept — musikk, lyder, stillhet</li>
+            <li>Teste timing og samspill med handling og bevegelse</li>
+            <li>Samarbeide tett med ensemble og regi</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-koreografi">
+        <div class="rolle-header" onclick="toggleRolle('rolle-koreografi')">
+          <span class="rolle-name">Bevegelseinstruktør / koreograf</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Utvikle bevegelsesstruktur i samarbeid med regi og ensemble</li>
+            <li>Arbeide med rombruk, dynamikk og samspill</li>
+            <li>Sikre at bevegelse støtter dramaturgi og uttrykk</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-marked">
+        <div class="rolle-header" onclick="toggleRolle('rolle-marked')">
+          <span class="rolle-name">Markedsføring</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Utvikle markedsføringsidé i tråd med forestillingens uttrykk og målgruppe</li>
+            <li>Samarbeide med ensemble om innhold og gjennomføring</li>
+            <li>Starter arbeidet når kostyme, rekvisitt og regi er på plass</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-regnskap">
+        <div class="rolle-header" onclick="toggleRolle('rolle-regnskap')">
+          <span class="rolle-name">Regnskap</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Ha oversikt over produksjonens økonomi</li>
+            <li>Følge opp budsjett og faktiske utgifter underveis</li>
+            <li>Sikre at produksjonen holder seg innenfor tilgjengelige rammer</li>
+            <li>I profesjonelle produksjoner faller regnskap under produsenten</li>
+          </ul>
+          <a class="fornyere-link" href="https://teateriperspektiv2.wordpress.com/2026/04/03/skyggeregnskap/" target="_blank">→ Skyggeregnskap-eksempel</a>
+        </div>
+      </div>
+
+      <div class="rolle" id="rolle-publikum">
+        <div class="rolle-header" onclick="toggleRolle('rolle-publikum')">
+          <span class="rolle-name">Publikumsansvarlig</span>
+          <button type="button" class="vis-btn">Vis</button>
+        </div>
+        <div class="rolle-body">
+          <ul class="bullets">
+            <li>Organisere billetter, program og velkomst</li>
+            <li>Håndtere publikumsflyt og sitteplassering</li>
+            <li>Sikre tilgjengelighet for alle tilskuere</li>
+            <li>Koordinere med inspisient om timing for forestillingens start</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="prod-close" onclick="toggleProd('ps-roller')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- POST MORTEM -->
+  <div class="prod-section vg2" id="ps-postmortem">
+    <div class="prod-header" onclick="toggleProd('ps-postmortem')">
+      <span class="prod-title">Post mortem</span>
+      <button type="button" class="vis-btn">Vis</button>
+    </div>
+    <div class="prod-body">
+      <p class="prod-note">En strukturert gjennomgang av produksjonsprosessen etter endt forestilling — ikke for å kritisere, men for å lære.</p>
+
+      <div class="prod-point"><span class="prod-num">1</span><div><p>Hvordan fungerte <strong>organisasjonsmodellen?</strong></p></div></div>
+      <div class="prod-point"><span class="prod-num">2</span><div><p>Hvor tydelig var dere med <strong>etiske retningslinjer</strong> og rutiner for <span style="white-space:nowrap">samarbeid?</span></p></div></div>
+      <div class="prod-point"><span class="prod-num">3</span><div><p>Hvor effektiv var deres <strong>oppvarmingsøvelser og ritualer?</strong> Bruk av <span style="white-space:nowrap">stemmeøvelser?</span></p></div></div>
+      <div class="prod-point"><span class="prod-num">4</span><div><p>Hvordan fungerte formidling av <strong>regikonseptet</strong> i forhold til ensemblets forståelse under <span style="white-space:nowrap">prosessen?</span></p></div></div>
+      <div class="prod-point"><span class="prod-num">5</span><div><p>Hvordan fungerte de <strong>dramaturgiske valgene?</strong></p></div></div>
+      <div class="prod-point"><span class="prod-num">6</span><div><p>Hvordan fungerte de <strong>sceniske virkemidlene</strong> i forhold til <span style="white-space:nowrap">regikonseptet?</span> Drøft hver for seg: tekst, lys, scenografi, kostyme, sminke osv.</p></div></div>
+      <div class="prod-point"><span class="prod-num">7</span><div><p>Hadde produktet et <strong>helhetlig estetisk uttrykk?</strong></p></div></div>
+      <div class="prod-point"><span class="prod-num">8</span><div><p>Hvordan fungerte <strong>publikumskontrakten</strong>, samspill og spillestil i forhold til <span style="white-space:nowrap">regikonseptet?</span></p></div></div>
+      <div class="prod-point"><span class="prod-num">9</span><div><p>Hvordan oppfattet <strong>publikum</strong> forestillingens <span style="white-space:nowrap">regikonsept?</span></p></div></div>
+      <div class="prod-point"><span class="prod-num">10</span><div><p>Hvordan fungerte den <strong>økonomiske modellen?</strong> Hva hadde dette å si for <span style="white-space:nowrap">produktet?</span></p></div></div>
+      <div class="prod-point"><span class="prod-num">11</span><div><p>Hvordan fungerte <strong>markedsføringsplanen?</strong></p></div></div>
+
+      <div class="prod-close" onclick="toggleProd('ps-postmortem')">Skjul ↑</div>
+    </div>
+  </div>
+
+  <!-- RESSURSER -->
+  <div class="divider-label mt">Tilleggsmateriale</div>
+  <div class="reel-item">
+    <a class="reel-thumb" href="https://wakelet.com/wake/AOBRg5xATInDS53w3xl8G" target="_blank">
+      <img src="Screenshot.png" alt="Kostymer, hår, dukker osv.">
+    </a>
+    <a class="reel-label" href="https://wakelet.com/wake/AOBRg5xATInDS53w3xl8G" target="_blank">Åpne videosamling — Kostymer, hår, dukker osv. ↗</a>
+  </div>
+
+  <div class="reel-item">
+    <a class="reel-thumb" href="https://wakelet.com/wake/ArCWOv5sU_fJMdGTQMiES" target="_blank">
+      <img src="wilson.jpg" alt="Inspirasjon til iscenesettelsen">
+    </a>
+    <a class="reel-label" href="https://wakelet.com/wake/ArCWOv5sU_fJMdGTQMiES" target="_blank">Åpne videosamling — Inspirasjon til iscenesettelsen ↗</a>
+  </div>
+
+
+  <nav class="chapter-nav">
+    <a class="chapter-nav-prev" href="analyse.html">← Analyse</a>
+    <a class="chapter-nav-next" href="skuespill.html">Skuespillteknikker →</a>
+  </nav>
+</div><!-- end .page -->
+
+<footer class="site-footer">
+  © 2026 · Redaktør: <a href="https://teateriperspektiv2.wordpress.com/contact/" target="_blank">Ren Powell</a>
+</footer>
+
+<script>
+function toggleProd(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const btn = el.querySelector('.prod-header .vis-btn');
+  if (btn) btn.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleRolle(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const btn = el.querySelector('.rolle-header .vis-btn');
+  if (btn) btn.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  document.querySelector('.theme-toggle').textContent = next === 'dark' ? '☽' : '☀︎';
+  localStorage.setItem('theme', next);
+}
+
+const saved = localStorage.getItem('theme');
+if (saved) {
+  document.documentElement.setAttribute('data-theme', saved);
+  if (saved === 'dark') document.querySelector('.theme-toggle').textContent = '☽';
+}
+</script>
+</body>
+</html>
