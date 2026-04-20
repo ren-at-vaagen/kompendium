@@ -153,37 +153,37 @@
       <div class="prod-close" onclick="toggleProd('ps-etikk')">Skjul ↑</div>
     </div>
   </div>
-  <!-- ── kunstnerisk valg ─────────────────────────────────────── -->
+<!-- ── kunstnerisk valg ─────────────────────────────────────── -->
 <style>
-.kv-intro{font-size:13px;color:var(--text2);line-height:1.65;margin-bottom:.8rem}
-.kv-intro p{margin:0 0 .5rem}
-.kv-intro p:last-child{margin-bottom:0}
-.kv-intro em{font-style:italic}
-.kv-note{font-size:11px;color:var(--text3);font-style:italic;margin-top:.5rem}
-.kv-diagram{cursor:pointer;display:block;margin:.6rem 0 0;user-select:none}
-.kv-hint{display:block;font-size:11px;color:var(--text3);letter-spacing:.04em;text-align:center;margin-top:3px}
 .kv-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:200;align-items:center;justify-content:center;padding:16px}
 .kv-lb{position:relative;background:var(--bg);border-radius:6px;padding:20px 20px 10px;max-width:min(740px,94vw);max-height:94vh;overflow-y:auto}
 .kv-x{position:absolute;top:6px;right:10px;background:none;border:none;font-size:22px;line-height:1;cursor:pointer;color:var(--text3);padding:0;font-family:inherit}
 .kv-x:hover{color:var(--text)}
+.kv-diagram{cursor:pointer;display:block;margin:.4rem 0 0;user-select:none}
+.kv-hint{display:block;font-size:11px;color:var(--text3);letter-spacing:.04em;text-align:center;margin-top:3px}
 .kv-svg text{fill:#2a2825}
 [data-theme="dark"] .kv-svg text{fill:#bfbeb7}
 </style>
 
-<div class="kv-intro">
-  <p>Når vi tar beslutninger i prosessen med å skape scenekunst, er noen av dem helt basert på praktiske hensyn: Ta valg av rom som eksempel. Rommet kan forme kunstverket på en betydelig måte — men selve valget av rom er ofte styrt av tilgjengelighet og økonomi, ikke kunstnerisk intensjon. På samme måte kan rollebesetting være et rent kunstnerisk valg, men det kan like gjerne handle om hvem som er i klassen, i et amatørteater, eller på institusjonens lønningsliste. Oftest er mange beslutninger litt praktisk og litt kunstnerisk, avhengig av omstendigheter.</p>
-  <p class="kv-note">Merk: Diagrammet er én tolkningsmodell, ikke en fasit.</p>
-</div>
-
-<div class="kv-diagram" id="kvThumb" onclick="kvOpen()">
-  <!-- SVG inserted by script -->
-  <span class="kv-hint">Klikk for å forstørre</span>
+<div class="card" id="kvCard">
+  <div class="card-header" style="cursor:pointer" onclick="kvToggle()">
+    <div class="card-meta">
+      <div class="card-name">Kunstnerisk valg</div>
+    </div>
+    <button class="vis-btn" id="kvBtn" onclick="event.stopPropagation();kvToggle()">Vis</button>
+  </div>
+  <div class="card-body">
+    <p style="font-size:13px;color:var(--text2);line-height:1.65;margin:0 0 .4rem">Når vi tar beslutninger i prosessen med å skape scenekunst, er noen av dem helt basert på praktiske hensyn: Ta valg av rom som eksempel. Rommet kan forme kunstverket på en betydelig måte — men selve valget av rom er ofte styrt av tilgjengelighet og økonomi, ikke kunstnerisk intensjon. På samme måte kan rollebesetting være et rent kunstnerisk valg, men det kan like gjerne handle om hvem som er i klassen, i et amatørteater, eller på institusjonens lønningsliste. Oftest er mange beslutninger litt praktisk og litt kunstnerisk, avhengig av omstendigheter.</p>
+    <p style="font-size:11px;color:var(--text3);font-style:italic;margin:0 0 .6rem">Merk: Diagrammet er én tolkningsmodell, ikke en fasit.</p>
+    <div class="kv-diagram" id="kvThumb" onclick="kvOpen()">
+      <span class="kv-hint">Klikk for å forstørre</span>
+    </div>
+  </div>
 </div>
 
 <div class="kv-overlay" id="kvOverlay" onclick="kvClose()">
   <div class="kv-lb" onclick="event.stopPropagation()">
     <button class="kv-x" onclick="kvClose()">×</button>
-    <!-- SVG inserted by script -->
   </div>
 </div>
 
@@ -191,57 +191,30 @@
 <svg class="kv-svg" width="100%" viewBox="0 0 680 580" role="img" xmlns="http://www.w3.org/2000/svg">
   <title>Kunstnerisk valg – venndiagram</title>
   <desc>Venndiagram: dramaturgiske valg og sceniske valg er fullt inne i kunstnerisk valg. Teaterform er for det meste inne og krysser venstre grense. Valg av rom og rollebesetting er delvis inne. Arbeidsform er bare litt inne.</desc>
-
-  <!-- kunstnerisk valg (main) -->
   <circle cx="340" cy="285" r="195" fill="#EEEDFE" fill-opacity="0.2" stroke="#7F77DD" stroke-width="2"/>
-
-  <!-- dramaturgiske valg — fully inside -->
   <circle cx="255" cy="370" r="60" fill="#E1F5EE" fill-opacity="0.72" stroke="#1D9E75" stroke-width="1.5"/>
-
-  <!-- sceniske valg — mostly inside, tiny overlap with teaterform + rollebesetting -->
   <circle cx="353" cy="235" r="70" fill="#FAECE7" fill-opacity="0.72" stroke="#D85A30" stroke-width="1.5"/>
-
-  <!-- teaterform — mostly inside, left edge clearly outside main -->
   <circle cx="200" cy="235" r="85" fill="#E6F1FB" fill-opacity="0.62" stroke="#378ADD" stroke-width="1.5"/>
-
-  <!-- sub-circles: overlapping cluster, well inside main -->
   <circle cx="210" cy="207" r="23" fill="#B5D4F4" fill-opacity="0.82" stroke="#378ADD" stroke-width="1"/>
   <circle cx="243" cy="233" r="24" fill="#B5D4F4" fill-opacity="0.82" stroke="#378ADD" stroke-width="1"/>
   <circle cx="213" cy="252" r="24" fill="#B5D4F4" fill-opacity="0.82" stroke="#378ADD" stroke-width="1"/>
-
-  <!-- valg av rom — partially inside -->
   <circle cx="450" cy="425" r="68" fill="#FAEEDA" fill-opacity="0.82" stroke="#EF9F27" stroke-width="1.5" stroke-dasharray="7 4"/>
-
-  <!-- rollebesetting — partially inside, tiny overlap with sceniske -->
   <circle cx="480" cy="248" r="60" fill="#FBEAF0" fill-opacity="0.82" stroke="#D4537E" stroke-width="1.5" stroke-dasharray="7 4"/>
-
-  <!-- arbeidsform — barely inside -->
   <circle cx="340" cy="508" r="50" fill="#EAF3DE" fill-opacity="0.82" stroke="#639922" stroke-width="1.5" stroke-dasharray="7 4"/>
-
-  <!-- ── labels ── -->
   <text x="340" y="108" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="14" font-weight="700">kunstnerisk valg</text>
-
   <text x="255" y="363" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="12">dramaturgiske</text>
   <text x="255" y="378" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="12">valg</text>
-
   <text x="353" y="227" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="12">sceniske</text>
   <text x="353" y="242" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="12">valg</text>
-
   <text x="194" y="306" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="12">teaterform</text>
-
   <text x="210" y="210" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="11">sjanger</text>
-
   <text x="243" y="227" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="11">teater-</text>
   <text x="243" y="239" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="11">modell</text>
-
   <text x="213" y="247" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="11">spille-</text>
   <text x="213" y="259" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="11">stil</text>
-
   <text x="450" y="429" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="12">valg av rom</text>
-
   <text x="480" y="242" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="12">rolle-</text>
   <text x="480" y="257" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="12">besetting</text>
-
   <text x="340" y="511" text-anchor="middle" font-family="'Atkinson Hyperlegible',sans-serif" font-size="12">arbeidsform</text>
 </svg>
 </template>
@@ -249,17 +222,20 @@
 <script>
 (function(){
   var tpl = document.getElementById('kv-tpl');
-  var thumb = document.getElementById('kvThumb');
-  var lb = document.querySelector('.kv-lb');
-  thumb.insertBefore(tpl.content.cloneNode(true), thumb.lastElementChild);
-  lb.appendChild(tpl.content.cloneNode(true));
+  document.getElementById('kvThumb').insertBefore(tpl.content.cloneNode(true), document.getElementById('kvThumb').lastElementChild);
+  document.querySelector('.kv-lb').appendChild(tpl.content.cloneNode(true));
+  window.kvToggle = function(){
+    var card = document.getElementById('kvCard');
+    var btn  = document.getElementById('kvBtn');
+    card.classList.toggle('open');
+    btn.textContent = card.classList.contains('open') ? 'Skjul' : 'Vis';
+  };
   window.kvOpen  = function(){ document.getElementById('kvOverlay').style.display='flex'; };
   window.kvClose = function(){ document.getElementById('kvOverlay').style.display='none'; };
   document.addEventListener('keydown', function(e){ if(e.key==='Escape') kvClose(); });
 })();
 </script>
 <!-- ── end kunstnerisk valg ─────────────────────────────────── -->
-
   <!-- TIDSLINJE -->
   <div class="prod-section vg2" id="ps-tidslinje">
     <div class="prod-header" onclick="toggleProd('ps-tidslinje')">
