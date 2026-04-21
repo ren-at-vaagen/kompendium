@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skuespillteknikker — Teaterfag kompendium</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="vg-filter.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-home" href="index.html">← Kompendium</a>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <span class="nav-title">Skuespillteknikker</span>
+      <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Bytt fargemodus">☀︎</button>
+      <a href="sok.html" class="search-link" aria-label="Søk">⌕ Søk</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+  <p class="chapter-number" style="margin-bottom:0.2rem;">06</p>
+  <h1 class="page-title">SKUESPILLTEKNIKKER</h1>
+  <p class="page-sub">Skuespillerens verktøykasse — teknikker og metoder.</p>
+  <p style="font-size:13px; color:var(--text2); line-height:1.6; margin-bottom:1.2rem; padding-bottom:1rem; border-bottom:1px solid var(--border2);">Disse teknikkene er verktøy, ikke regler. Fagfolk er ofte uenige om hva som er «riktig» innenfor hver tradisjon — og det er greit. Plukk og miks det som fungerer for deg og det sceniske arbeidet du gjør.</p>
+
+  <div class="reel-item">
+    <a class="reel-thumb" href="https://wakelet.com/wake/C1SfeXjhtBzNDAK3IgW5V" target="_blank">
+      <img src="https://raw.githubusercontent.com/ren-at-vaagen/kompendium/main/stemmebruk.jpg" alt="Oppvarming og stemme">
+    </a>
+    <a class="reel-label" href="https://wakelet.com/wake/C1SfeXjhtBzNDAK3IgW5V" target="_blank">Åpne videosamling — Oppvarming og stemme ↗</a>
+  </div>
+
+  <div class="section">
+
+    <div class="technique" id="stanislavski">
+      <div class="technique-header" onclick="toggleTech(this.closest('.technique').id, null)">
+        <div class="technique-left">
+          <div class="technique-name">Stanislavski-systemet</div>
+          <div class="technique-who">Konstantin Stanislavski</div>
+        </div>
+        <button type="button" class="vis-btn" onclick="event.stopPropagation(); toggleTech('stanislavski', this)">Vis</button>
+      </div>
+      <div class="technique-body">
+        <ul class="bullets">
+          <li>Indre motivasjon — hva vil karakteren?</li>
+          <li>Emosjonell hukommelse som verktøy</li>
+          <li>Gitte omstendigheter — hvem, hva, hvor, når</li>
+          <li>Magisk hvis — hva om jeg var i denne situasjonen?</li>
+          <li>Spill handlingen, ikke emosjonen</li>
+        </ul>
+        <div class="exercises">
+          <div class="exercise" id="ex-stan-penka">
+            <div class="exercise-header">
+              <span class="exercise-name">Rudolf Penkas fem spørsmål</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-stan-penka', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">En videreutvikling av Stanislavskis system. Bruk disse spørsmålene til å analysere karakteren din ut fra teksten — svar med verb og konkrete handlinger, ikke følelsesord.</p>
+              <ol style="font-size:13px;line-height:1.7;margin:0.4rem 0 0.4rem 1.2rem;">
+                <li>Hvem er jeg?</li>
+                <li>Hva gjør jeg? <em>(bruk verb)</em></li>
+                <li>Hvorfor gjør jeg det? <em>(mål)</em></li>
+                <li>Hvor? <em>(de gitte omstendigheter)</em></li>
+                <li>Når? <em>(de ytterligere omstendigheter)</em></li>
+              </ol>
+              <p class="exercise-text" style="margin-top:0.4rem;"><a href="https://teateriperspektiv2.wordpress.com/wp-content/uploads/2019/12/rudolf-penka-tell-forlag.pdf" target="_blank">Rudolf Penka — Tell Forlag (PDF) ↗</a></p>
+            </div>
+          </div>
+          <div class="exercise" id="ex-stan-2">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 2 — Enkel handling</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-stan-2', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Velg én fysisk handling (helle vann, skrive et brev, lete etter noe). Gjør den med full konsentrasjon. La omgivelsene og situasjonen forme handlingen — ikke tankene om rollen.</p>
+            </div>
+          </div>
+        </div>
+        <a class="fornyere-link" href="teaterfornyere.html#stanislavski">→ Stanislavski-profil</a>
+        <div class="tech-close" onclick="toggleTech('stanislavski', null)">Skjul ↑</div>
+      </div>
+    </div>
+
+    <div class="technique vg2" id="meisner">
+      <div class="technique-header" onclick="toggleTech(this.closest('.technique').id, null)">
+        <div class="technique-left">
+          <div class="technique-name">Meisner-teknikk</div>
+          <div class="technique-who">Sanford Meisner</div>
+        </div>
+        <button type="button" class="vis-btn" onclick="event.stopPropagation(); toggleTech('meisner', this)">Vis</button>
+      </div>
+      <div class="technique-body">
+        <ul class="bullets">
+          <li>«Leve sant under imaginære omstendigheter»</li>
+          <li>Repetisjonsøvelse — total oppmerksomhet på partneren</li>
+          <li>Reaksjon er viktigere enn planlagt handling</li>
+          <li>Ikke forbered — vær tilstede</li>
+        </ul>
+        <div class="exercises">
+          <div class="exercise" id="ex-meis-1">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 1 — Repetisjonsøvelse</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-meis-1', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">To spillere. A observerer B og sier hva de ser: «Du ser til høyre.» B gjentar det tilbake: «Jeg ser til høyre.» Bytt. Ikke tenk — reager. Øvelsen varer til noe ekte skjer mellom dere.</p>
+            </div>
+          </div>
+        </div>
+        <a class="fornyere-link" href="teaterfornyere.html#meisner">→ Meisner-profil</a>
+        <div class="tech-close" onclick="toggleTech('meisner', null)">Skjul ↑</div>
+      </div>
+    </div>
+
+    <div class="technique vg2" id="utahagen">
+      <div class="technique-header" onclick="toggleTech(this.closest('.technique').id, null)">
+        <div class="technique-left">
+          <div class="technique-name">Uta Hagen-metoden</div>
+          <div class="technique-who">Uta Hagen</div>
+        </div>
+        <button type="button" class="vis-btn" onclick="event.stopPropagation(); toggleTech('utahagen', this)">Vis</button>
+      </div>
+      <div class="technique-body">
+        <ul class="bullets">
+          <li>Substitusjon — bytt ut fiksjon med eget liv</li>
+          <li>De ni spørsmålene som karakteranalyseverktøy</li>
+          <li>Fysiske handlinger forankrer karakteren</li>
+          <li>Objektøvelser — ekte gjenstander, ekte handlinger</li>
+        </ul>
+        <div class="exercise" id="ex-uta-ni" style="margin-bottom:0.6rem;">
+          <div class="exercise-header">
+            <span class="exercise-name">De ni spørsmålene</span>
+            <button type="button" class="vis-btn" onclick="toggleEx('ex-uta-ni', this)">Vis</button>
+          </div>
+          <div class="exercise-body">
+            <ol style="font-size:13px;line-height:1.7;margin:0.4rem 0 0.4rem 1.2rem;">
+              <li>Hvem er jeg?</li>
+              <li>Hva er tidspunktet?</li>
+              <li>Hvor er jeg?</li>
+              <li>Hva omgir meg?</li>
+              <li>Hva er mitt forhold til de andre?</li>
+              <li>Hva vil jeg?</li>
+              <li>Hva er hindringen?</li>
+              <li>Hva gjør jeg for å få det jeg vil? <em>(bruk verb)</em></li>
+              <li>Hva er den forutgående handlingen?</li>
+            </ol>
+          </div>
+        </div>
+        <div class="exercises">
+          <div class="exercise" id="ex-uta-1">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 1 — Objektøvelse</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-uta-1', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Velg tre ekte gjenstander fra din hverdag. Lag en scene på 2–3 minutter der du bruker dem med full konsentrasjon. Ingen publikum — bare deg og gjenstandene. Handlingen avslører karakteren.</p>
+            </div>
+          </div>
+        </div>
+        <a class="fornyere-link" href="teaterfornyere.html#utahagen">→ Uta Hagen-profil</a>
+        <div class="tech-close" onclick="toggleTech('utahagen', null)">Skjul ↑</div>
+      </div>
+    </div>
+
+    <div class="technique vg2" id="brecht">
+      <div class="technique-header" onclick="toggleTech(this.closest('.technique').id, null)">
+        <div class="technique-left">
+          <div class="technique-name">Gestus</div>
+          <div class="technique-who">Bertolt Brecht</div>
+        </div>
+        <button type="button" class="vis-btn" onclick="event.stopPropagation(); toggleTech('brecht', this)">Vis</button>
+      </div>
+      <div class="technique-body">
+        <ul class="bullets">
+          <li>Gestus = holdning som viser sosial relasjon og makt</li>
+          <li>Kroppen viser klassetilhørighet, ikke bare følelse</li>
+          <li>Skuespilleren kommenterer rollen — forsvinner ikke inn i den</li>
+          <li>Tydelig, lesbar bevegelse uten psykologisk tvetydighet</li>
+        </ul>
+        <div class="exercises">
+          <div class="exercise" id="ex-brecht-1">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 1 — Status og kropp</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-brecht-1', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Gå gjennom rommet. Tenk: hva er din karakter sin sosiale posisjon? Høy status, lav status? La kroppen vise det — ikke ansiktet. Bytt status midt i bevegelsen. Hva endrer seg?</p>
+            </div>
+          </div>
+        </div>
+        <a class="fornyere-link" href="teaterfornyere.html#brecht">→ Brecht-profil</a>
+        <div class="tech-close" onclick="toggleTech('brecht', null)">Skjul ↑</div>
+      </div>
+    </div>
+
+    <div class="technique vg2" id="grotowski">
+      <div class="technique-header" onclick="toggleTech(this.closest('.technique').id, null)">
+        <div class="technique-left">
+          <div class="technique-name">Psykofysisk trening</div>
+          <div class="technique-who">Grotowski / Barba · Odin Teatret</div>
+        </div>
+        <button type="button" class="vis-btn" onclick="event.stopPropagation(); toggleTech('grotowski', this)">Vis</button>
+      </div>
+      <div class="technique-body">
+        <ul class="bullets">
+          <li>Kropp og psyke er uatskillelige — trening er alltid begge deler</li>
+          <li>Via negativa — fjern hindringer, ikke legg til teknikker</li>
+          <li>Langsom, presis bevegelse som kilde til nærvær</li>
+          <li>Øvelser fra Odin Teatret: energiarbeid, tempo, rom</li>
+          <li>Basert på Grotowski, videreutviklet av Barba og Odin Teatret</li>
+        </ul>
+        <div class="exercises">
+          <div class="exercise" id="ex-grot-1">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 1 — Slow walk</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-grot-1', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Gå ekstremt langsomt gjennom rommet. Hvert steg tar 10 sekunder. Kjenn vekten flytte seg fra hæl til tå. Stopp plutselig. Vent. Fortsett. Målet er fullstendig nærvær — ikke prestasjon.</p>
+            </div>
+          </div>
+        </div>
+        <a class="fornyere-link" href="teaterfornyere.html#grotowski">→ Grotowski-profil</a>
+        <div class="tech-close" onclick="toggleTech('grotowski', null)">Skjul ↑</div>
+      </div>
+    </div>
+
+    <div class="technique" id="lecoq">
+      <div class="technique-header" onclick="toggleTech(this.closest('.technique').id, null)">
+        <div class="technique-left">
+          <div class="technique-name">Lecoq-metoder</div>
+          <div class="technique-who">Jacques Lecoq</div>
+        </div>
+        <button type="button" class="vis-btn" onclick="event.stopPropagation(); toggleTech('lecoq', this)">Vis</button>
+      </div>
+      <div class="technique-body">
+        <ul class="bullets">
+          <li>Nøytral maske — nullpunkt, ingen karakter</li>
+          <li>Dyranalyse — observer og legemliggjør dyrenes bevegelse og energi</li>
+          <li>Le jeu (spillet) — oppdagelse gjennom lek og improvisasjon</li>
+          <li>Melodrama, klovn, commedia — ulike spilleregistre</li>
+        </ul>
+        <div class="exercises">
+          <div class="exercise" id="ex-lecoq-1">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 1 — Dyranalyse</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-lecoq-1', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Velg et dyr. Observer det (video eller irl) i 10 minutter. Fokuser på: rytme, vekt, hvordan hodet beveger seg, tempo. Begynn med kroppen — ikke hodet. Gå gradvis fra dyr mot menneskelig figur.</p>
+            </div>
+          </div>
+          <div class="exercise" id="ex-lecoq-2">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 2 — Nøytral maske</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-lecoq-2', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Sett på nøytral maske (eller lukk øynene og forestill deg det). Gå inn i rommet som om du ser det for første gang. Ingen følelser, ingen karakter. Bare tilstedeværelse og oppdagelse.</p>
+            </div>
+          </div>
+        </div>
+        <a class="fornyere-link" href="teaterfornyere.html#lecoq">→ Lecoq-profil</a>
+        <div class="tech-close" onclick="toggleTech('lecoq', null)">Skjul ↑</div>
+      </div>
+    </div>
+
+    <div class="technique vg2" id="mchekhov">
+      <div class="technique-header" onclick="toggleTech(this.closest('.technique').id, null)">
+        <div class="technique-left">
+          <div class="technique-name">Michael Chekhov-teknikk</div>
+          <div class="technique-who">Michael Chekhov</div>
+        </div>
+        <button type="button" class="vis-btn" onclick="event.stopPropagation(); toggleTech('mchekhov', this)">Vis</button>
+      </div>
+      <div class="technique-body">
+        <ul class="bullets">
+          <li>Imaginasjonsbasert — bruker fantasi og bilder fremfor personlig hukommelse</li>
+          <li>Psykologisk gest (Psychological Gesture) — rollefigurens indre drivkraft uttrykkes gjennom en ekstern, fysisk gest som internaliseres i kroppen</li>
+          <li>Atmosfære — rommet og situasjonen har en stemning som skuespilleren lever i og reagerer på</li>
+          <li>Tempo staccato/legato — bevisst variasjon av rytme og flyt i bevegelse og tale</li>
+          <li>«The body and its psychology are inseparable»</li>
+        </ul>
+        <div class="exercises">
+          <div class="exercise" id="ex-mch-1">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 1 — Psykologisk gest</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-mch-1', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Tenk på hva rollefiguren din ønsker dypest sett. Finn en enkel, stor kroppsbevegelse som uttrykker dette — strekk mot noe, lukk deg inn, skyv noe vekk. Gjør bevegelsen fullt ut flere ganger. La den bli liten, intern. Spill scenen med den interne gesten som drivkraft.</p>
+            </div>
+          </div>
+          <div class="exercise" id="ex-mch-2">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 2 — Atmosfære</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-mch-2', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Velg to svært ulike atmosfærer for samme scene — for eksempel «tung, stille sorg» og «skjør, lysende glede». Spill scenen fullt ut i hver atmosfære. Legg merke til hvordan karakterens valg og tempo endres av rommet de lever i.</p>
+            </div>
+          </div>
+        </div>
+        <a class="fornyere-link" href="teaterfornyere.html#mchekhov">→ Michael Chekhov-profil</a>
+        <div class="tech-close" onclick="toggleTech('mchekhov', null)">Skjul ↑</div>
+      </div>
+    </div>
+
+    <div class="technique" id="gotesheet">
+      <div class="technique-header" onclick="toggleTech(this.closest('.technique').id, null)">
+        <div class="technique-left">
+          <div class="technique-name">GOTEsheet og beats</div>
+          <div class="technique-who">Robert Cohen</div>
+        </div>
+        <button type="button" class="vis-btn" onclick="event.stopPropagation(); toggleTech('gotesheet', this)">Vis</button>
+      </div>
+      <div class="technique-body">
+        <ul class="bullets">
+          <li><strong>G</strong>oal — hva vil jeg egentlig ha, og når?</li>
+          <li><strong>O</strong>ther — hvem vil jeg ha det fra? Hvem hjelper, hvem hindrer?</li>
+          <li><strong>T</strong>actics — hvordan får jeg det jeg vil ha? Bruk verb, ikke følelsesord: <em>true, lokke, sjarmere, ignorere</em> — ikke <em>være sint</em> eller <em>føle kjærlighet</em></li>
+          <li><strong>E</strong>xpectation — hvorfor forventer jeg å få det? Hva gjør jeg når jeg får det?</li>
+        </ul>
+        <div class="exercises">
+          <div class="exercise" id="ex-gote-1">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 1 — GOTEsheet</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-gote-1', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Fyll ut bakgrunnsinformasjonen ved hjelp av Stanislavskis <em>gitte omstendigheter</em> eller Uta Hagens <em>ni spørsmål</em> (se disse teknikkene). Svar levende og konkret — bruk verb! Ikke følelsesord, ikke akademisk språk.</p>
+              <p class="exercise-text" style="margin-top:0.4rem;"><a href="https://github.com/ren-at-vaagen/kompendium/blob/main/request.pdf" target="_blank">Last ned GOTEsheet (PDF) ↗</a></p>
+            </div>
+          </div>
+          <div class="exercise" id="ex-gote-2">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 2 — Beats og taktikkskifter</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-gote-2', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Analyser en scene i beats — enheter der skuespilleren bruker én taktikk. Når taktikken lykkes, trenger du et nytt mål. Når den mislykkes, trenger du en ny taktikk. Marker skiftene tydelig: <em>nytt taktikk, nytt mål, ny følelse: nytt scenebilde.</em></p>
+            </div>
+          </div>
+        </div>
+        <p class="tmat-source" style="margin-top:0.6rem;">Cohen, Robert. <em>Acting One</em>, 2. utg. Mayfield Publishing Company, 1992, s. 54–55, 191–199.</p>
+        <div class="tech-close" onclick="toggleTech('gotesheet', null)">Skjul ↑</div>
+      </div>
+    </div>
+    <div class="technique" id="impro">
+      <div class="technique-header" onclick="toggleTech(this.closest('.technique').id, null)">
+        <div class="technique-left">
+          <div class="technique-name">Improvisasjon</div>
+          <div class="technique-who">Keith Johnstone · Viola Spolin</div>
+        </div>
+        <button type="button" class="vis-btn" onclick="event.stopPropagation(); toggleTech('impro', this)">Vis</button>
+      </div>
+      <div class="technique-body">
+        <ul class="bullets">
+          <li><strong>Ja, og</strong> — aksepter det partneren tilbyr og bygg videre. Blokkering dreper scenen; aksept holder den i live</li>
+          <li><strong>Tilbud og blokkering</strong> — et tilbud er alt partneren gjør eller sier. Du kan akseptere, bygge, eller blokkere. Bevisst blokkering kan brukes — ukontrollert blokkering ødelegger</li>
+          <li><strong>Status</strong> — alle karakterer spiller høy eller lav status, og statusforhold endres konstant. Kroppen, blikket og tempoet viser status — ikke bare ordene</li>
+          <li><strong>Historien driver seg selv</strong> — ikke planlegg. La neste handling følge logisk av det som nettopp skjedde</li>
+          <li>Spolin: teater som lek — «spill» ikke «arbeid». Tilstedeværelse og problemløsning i øyeblikket</li>
+        </ul>
+        <div class="exercises">
+          <div class="exercise" id="ex-impro-1">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 1 — Ja, og</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-impro-1', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">To spillere bygger en scene bare ved å akseptere og legge til. A: «Vi er på månen.» B: «Ja, og sanden er blå her.» A: «Ja, og den lukter sjokolade.» Ingen avvisning, ingen korreksjon — bare aksept og tillegg. Kjenn hvordan scenen lever av seg selv.</p>
+            </div>
+          </div>
+          <div class="exercise" id="ex-impro-2">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 2 — Statusspill</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-impro-2', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">To spillere, én situasjon (f.eks. jobbintervju). A spiller høy status: langsom bevegelse, direkte blikk, pauser. B spiller lav status: hurtig, unngår blikk, avbryter seg selv. Bytt. Spill deretter en scene der statusene skifter midt i — hva utløser skiftet?</p>
+            </div>
+          </div>
+          <div class="exercise" id="ex-impro-3">
+            <div class="exercise-header">
+              <span class="exercise-name">Øvelse 3 — Tilbud og blokkering</span>
+              <button type="button" class="vis-btn" onclick="toggleEx('ex-impro-3', this)">Vis</button>
+            </div>
+            <div class="exercise-body">
+              <p class="exercise-text">Spill en kort scene der én spiller bevisst blokkerer alle tilbud: «Vi burde dra.» — «Nei.» / «Se, det er en ku!» — «Det er ikke en ku.» Kjenn frustrasjonen. Spill deretter samme scene med full aksept. Diskuter: hva skaper energi, hva dreper den?</p>
+            </div>
+          </div>
+        </div>
+        <div class="tech-close" onclick="toggleTech('impro', null)">Skjul ↑</div>
+      </div>
+    </div>
+
+
+  </div><!-- end teknikker section -->
+
+  <p style="font-size:13px; color:var(--text2); line-height:1.6; margin:1.2rem 0 0.4rem;">Det finnes mange andre teknikker og tilnærminger — blant annet Alba Technique, Practical Aesthetics, Jeff Coreys Method-baserte teknikker og Richard Cohens Acting One. Utforsk, eksperimenter og finn din egen kombinasjon.</p>
+  <a class="wakelet-link" href="https://teateriperspektiv2.wordpress.com/category/skuespillteknikk/" target="_blank">→ Mer om skuespillteknikk — blogg ↗</a>
+
+  <div class="divider-label mt">Ressurser</div>
+  <div class="reel-item">
+    <a class="reel-thumb" href="https://wakelet.com/wake/vdZ9ZYXEzc-3EYkheXZHl" target="_blank">
+      <img src="https://raw.githubusercontent.com/ren-at-vaagen/kompendium/main/uta_hagen.jpg" alt="Råd til skuespilleren">
+    </a>
+    <a class="reel-label" href="https://wakelet.com/wake/vdZ9ZYXEzc-3EYkheXZHl" target="_blank">Åpne videosamling — Råd til skuespilleren ↗</a>
+  </div>
+
+
+  <a class="wakelet-link" href="https://teateriperspektiv2.wordpress.com" target="_blank">Finner ikke det du trenger? Søk i tilleggsmateriale — blogg ↗</a>
+
+  <nav class="chapter-nav">
+    <a class="chapter-nav-prev" href="produksjon.html">← Produksjon</a>
+    <a class="chapter-nav-next" href="bevegelse.html">Kropp, stemme og bevegelse →</a>
+  </nav>
+</div><!-- end .page -->
+
+<footer class="site-footer">
+  © 2026 · Redaktør: <a href="https://teateriperspektiv2.wordpress.com/contact/" target="_blank">Ren Powell</a>
+</footer>
+
+<script>
+function toggleTech(id, btn) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  const b = btn || el.closest('.technique').querySelector('.vis-btn');
+  if (b) b.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleEx(id, btn) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  if (btn) btn.textContent = el.classList.contains('open') ? 'Skjul' : 'Vis';
+}
+
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  document.querySelector('.theme-toggle').textContent = next === 'dark' ? '☽' : '☀︎';
+  localStorage.setItem('theme', next);
+}
+
+const saved = localStorage.getItem('theme');
+if (saved) {
+  document.documentElement.setAttribute('data-theme', saved);
+  if (saved === 'dark') document.querySelector('.theme-toggle').textContent = '☽';
+}
+</script>
+</body>
+</html>
